@@ -1,6 +1,6 @@
 # Selamlar ailem! 
 
-You can join the conversation in our [GitHub Discussions](https://github.com/yourusername/yourrepo/discussions).
+You can join the conversation in our [GitHub Discussions](https://github.com/prgrmcode/prgrmcode.github.io/discussions).
 
 Yorumlarınızı veya soru, görüş ve önerilerinizi buraya bırakabilirsiniz: [GitHub Discussions](https://github.com/prgrmcode/prgrmcode.github.io/discussions).
 
