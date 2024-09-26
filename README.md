@@ -1,4 +1,12 @@
-# Selamlar ailem! 
+# Selamlar ailem!
+
+[Give Us Feedback](feedback.html)
+
+[Yorumlarınız için tıklayınız](feedback.html)
+
+You can join the conversation in our [GitHub Discussions](https://github.com/prgrmcode/prgrmcode.github.io/discussions).
+
+Yorumlarınızı veya soru, görüş ve önerilerinizi buraya bırakabilirsiniz: [GitHub Discussions](https://github.com/prgrmcode/prgrmcode.github.io/discussions).
 
 You can join the conversation in our [GitHub Discussions](https://github.com/prgrmcode/prgrmcode.github.io/discussions).
 
@@ -9,7 +17,6 @@ Yorumlarınızı veya soru, görüş ve önerilerinizi buraya bırakabilirsiniz:
 ![picture](https://github.com/user-attachments/assets/ed17a66c-dc39-4feb-86c9-434d6f6c3d55)
 
 ![pngwing com](https://github.com/user-attachments/assets/36752533-ccf7-4fb7-9f19-314899484b89)
-
 
 ![img](https://github.com/user-attachments/assets/26513cb0-9672-44b0-b896-bb38416af746)
 
