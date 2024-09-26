@@ -1,0 +1,8 @@
+comments:
+  allowedFields: ['name', 'email', 'comment']
+  branch: master
+  commitMessage: "New comment by {fields.name}"
+  format: "json"
+  moderation: true
+  path: "data/comments"
+  filename: "comment-{date}"
