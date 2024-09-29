@@ -3,6 +3,12 @@
 
 <head>
 	<title>My Portfolio</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico"> <!-- Optional, for legacy support -->
+	<link rel="manifest" href="/site.webmanifest">
+
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,9 +21,13 @@
 	<!-- Nav -->
 	<nav id="nav">
 		<ul class="container">
-			<li><a href="#top">Top</a></li>
+			<li><a href="#top">About Me</a></li>
 			<li><a href="#work">Work</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#experience">Experience</a></li> <!-- New Section -->
+			<li><a href="#education">Education</a></li> <!-- New Section -->
+			<li><a href="#volunteer">Volunteer</a></li> <!-- New Section -->
+			<li><a href="#hobbies">Hobbies</a></li> <!-- New Section -->
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
@@ -46,31 +56,96 @@
 	<article id="work" class="wrapper style2">
 		<div class="container">
 			<header>
-				<h2>Technical Skills</h2>
-				<p>Expertise across Data Science, AI, and more.</p>
+				<h2>Technical Skills & Expertise</h2>
+				<p>Highlighting proficiency in Data Science, AI, and related technologies</p>
 			</header>
 			<div class="row aln-center">
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
 						<span class="icon solid featured fa-database"></span>
-						<h3>Data Science</h3>
-						<p>Python, Pandas, NumPy, Matplotlib, TensorFlow, Keras, PyTorch</p>
+						<h3>Data Manipulation & Analysis</h3>
+						<div class="tech-logos">
+							<img src="images/logos/pandas.svg" alt="pandas" class="tech-icon">
+							<img src="images/logos/numpylogo.svg" alt="numpy" class="tech-icon">
+							<img src="images/logos/logo-mysql-170x115.png" alt="mysql" class="tech-icon">
+						</div>
+						<p>Expertise in data preprocessing and manipulation using <strong>Pandas</strong>,
+							<strong>NumPy</strong>, and <strong>SQL</strong>.
+						</p>
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<span class="icon solid featured fa-code"></span>
-						<h3>Programming</h3>
-						<p>Python, SQL, C, C++, HTML, CSS, XML, JavaScript, Node.js</p>
+						<span class="icon solid featured fa-brain"></span>
+						<h3>Machine Learning & AI</h3>
+						<div class="tech-logos">
+							<img src="images/logos/Tensorflow_logo.svg" alt="TensorFlow" class="tech-icon">
+							<img src="images/logos/Keras.svg" alt="Keras" class="tech-icon">
+							<img src="images/logos/PyTorch_logo_icon.svg" alt="PyTorch" class="tech-icon">
+							<img src="images/logos/scikit-learn-logo-without-subtitle.svg" alt="Scikit-Learn"
+								class="tech-icon">
+							<img src="images/logos/OpenCV_logo_black.svg" alt="OpenCV" class="tech-icon">
+						</div>
+						<p>Deep Learning, CNNs, NLP, TensorFlow, Keras, PyTorch, Scikit-Learn, OpenCV, Regression,
+							Classification, Anomaly Detection, Anaconda</p>
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
 						<span class="icon solid featured fa-chart-line"></span>
-						<h3>Machine Learning</h3>
-						<p>Regression, Classification, CNNs, NLP, Anomaly Detection</p>
+						<h3>Data Visualization</h3>
+						<div class="tech-logos">
+							<img src="images/logos/Matplotlib_icon.svg.png" alt="Matplotlib" class="tech-icon">
+							<img src="images/logos/logo-wide-lightbg.svg" alt="Seaborn" class="tech-icon">
+						</div>
+						<p>Proficient in visualizing complex data insights with <strong>Matplotlib</strong>,
+							<strong>Seaborn</strong>, and <strong>PowerBI</strong>.
+						</p>
 					</section>
 				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<section class="box style1">
+						<span class="icon solid featured fa-cloud"></span>
+						<h3>Cloud & DevOps</h3>
+						<div class="tech-logos">
+							<img src="images/logos/Amazon_Web_Services_Logo.svg.png" alt="Matplotlib" class="tech-icon">
+							<img src="images/logos/docker-logo-blue.svg" alt="Docker" class="tech-icon">
+							<img src="images/logos/Git-Logo-1788C.svg" alt="Git" class="tech-icon">
+						</div>
+						<p>Skilled in <strong>AWS</strong> deployment, <strong>Docker</strong> containerization, and
+							using <strong>Git</strong> for version control.</p>
+					</section>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<section class="box style1">
+						<span class="icon solid featured fa-code"></span>
+						<h3>Programming Languages</h3>
+						<div class="tech-logos">
+							<img src="images/logos/python-logo-only.svg" alt="Python" class="tech-icon">
+							<img src="images/logos/logo-mysql-170x115.png" alt="SQL" class="tech-icon">
+							<img src="images/logos/C_Programming_Language.svg.png" alt="c" class="tech-icon">
+							<img src="images/logos/ISO_C++_Logo.svg.png" alt="c++" class="tech-icon">
+							<img src="images/logos/HTML5_logo_black.svg" alt="html" class="tech-icon">
+							<img src="images/logos/CSS3_logo_and_wordmark.svg" alt="css" class="tech-icon">
+							<img src="images/logos/Unofficial_JavaScript_logo_2.svg" alt="JavaScript" class="tech-icon">
+						</div>
+						<p>Python, SQL, C, C++, HTML, CSS, XML, JavaScript, React, Node.js</p>
+					</section>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<section class="box style1">
+						<span class="icon solid featured fa-file-alt"></span>
+						<h3>Other Technologies</h3>
+						<div class="tech-logos">
+							<img src="images/logos/office-1.svg" alt="Office" class="tech-icon">
+							<img src="images/logos/xterm_logo.png" alt="MobaXterm" class="tech-icon">
+							<img src="images/logos/MongoDB_Fores-Green.svg" alt="MongoDB" class="tech-icon">
+							<img src="images/logos/vscode.svg" alt="Visual" class="tech-icon">
+						</div>
+						<p>Microsoft Office, MobaXterm, JSON, MongoDB, MySQL, Visual Studio Code</p>
+					</section>
+				</div>
+
 			</div>
 
 			<footer>
@@ -147,12 +222,303 @@
 					</article>
 				</div> -->
 			</div>
+
 			<footer>
-				<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-				<a href="#contact" class="button large scrolly">Get in touch with me</a>
+				<p>Interested in my experience? Take a look below!</p>
+				<a href="#experience" class="button large scrolly">See some of my recent experience</a>
+			</footer>
+
+		</div>
+	</article>
+
+	<!-- Work Experience Section -->
+	<article id="experience" class="wrapper style2">
+		<div class="container">
+			<header>
+				<h2>Work Experience</h2>
+				<p>A snapshot of my professional journey.</p>
+			</header>
+			<div class="experience-grid">
+				<!-- Experience Card for Barco -->
+				<div class="experience-card" id="barco-card">
+					<h3>Artificial Intelligence Research Engineer</h3>
+					<p><strong>Barco</strong> - Kortrijk, Belgium | 02/2024 - 07/2024</p>
+					<ul>
+						<li>Developed AI solutions in medical imaging, awarded a patent for innovation.</li>
+						<li>Optimized CNN architectures, improving diagnostic accuracy by 71.43%.</li>
+						<li>Collaborated cross-functionally to convert business needs into AI solutions.</li>
+					</ul>
+				</div>
+
+				<!-- Experience Card for Thomas More -->
+				<div class="experience-card">
+					<h3>Machine Learning Specialist</h3>
+					<p><strong>Thomas More Power Energy Company</strong> - Sint-Katelijne-Waver, Belgium | 09/2021 -
+						06/2022</p>
+					<ul>
+						<li>Developed supervised anomaly detection algorithms for energy distribution systems.</li>
+						<li>Improved resource allocation with optimized DNN models for time series predictions.</li>
+						<li>View the project: <a
+								href="https://github.com/tm-pe2/ai-ml/blob/main/timeSeries-NeuralNetwork/timeSeriesHousehold_2.ipynb"
+								target="_blank">Time Series Neural Network Project</a></li>
+						<li><a href="#ml-specialist-modal" class="open-modal">View Step-by-Step Results</a></li>
+					</ul>
+				</div>
+				<!-- More Experience Cards... -->
+			</div>
+
+
+			<!-- Modal for Barco Experience Details -->
+			<div id="barco-modal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<h2>Medical Image Processing with AI</h2>
+					<h3>Phase1: Marker Based Scale Detection in Mammography</h3>
+
+
+					<h3>PROBLEM OVERVIEW</h3>
+					<p>We need to know the size.</p>
+					<img src="images/mammography.png" alt="Mammography Image"
+						style="width: 100%; height: auto; margin: 20px 0;">
+					<img src="images/markers.png" alt="Markers Detection"
+						style="width: 100%; height: auto; margin: 20px 0;">
+					<p>The main markers: Ruler & Magnifying Glass.</p>
+
+
+					<h3>METHODOLOGY</h3>
+					<p>We do not have access to metadata; DICOM data is not available on viewer. Markers on medical
+						image need to be detected and we need to develop AI algorithms.</p>
+					<img src="images/methodology.png" alt="Methodology Diagram"
+						style="width: 100%; height: auto; margin: 20px 0;">
+
+
+					<h3>YOLO OBJECT DETECTION TRAINING</h3>
+					<p>• Trained on RTX 3090 GPU with 800 images</p>
+					<p>• YOLO: <a href="https://docs.ultralytics.com/yolov5/" target="_blank">YOLO Documentation</a></p>
+
+					<h3>GET THE BOUNDING BOX AND READ TEXT WITH OCR</h3>
+					<p>• EasyOCR: state of the art and open source Optical Character Recognition (OCR) library.</p>
+					<p>• EasyOCR is built on top of PyTorch and OpenCV, it is an AI model which is pre-trained on more
+						than 80 languages.</p>
+					<p>• OCR: <a href="https://github.com/JaidedAI/EasyOCR" target="_blank">EasyOCR GitHub</a></p>
+
+					<h3>RESULTS</h3>
+					<p>Through the integration of AI-powered image processing techniques, including deep learning and
+						neural networks, our research achieves enhanced scale detection from markers in mammography
+						images. This innovative approach promises to improve early breast cancer detection and patient
+						outcomes.</p>
+					<img src="images/results.png" alt="Results Overview"
+						style="width: 100%; height: auto; margin: 20px 0;">
+					<img src="images/OCR.png" alt="OCR Process" style="width: 100%; height: auto; margin: 20px 0;">
+
+					<h3>CONCLUSIONS</h3>
+					<h3>AI-based Marker Detection</h3>
+					<p>Through the integration of AI-powered image processing techniques, including deep learning and
+						neural networks, our research achieves enhanced scale detection from markers in mammography
+						images. This innovative approach promises to improve early breast cancer detection and patient
+						outcomes, marking a significant advancement in medical imaging technology.
+					</p>
+					<!-- <h3>Read the content with OCR:</h3>
+					<pre>
+						[[18, 12], [82, 12], [82, 38], [18, 38]], '63 Mm’, 35%
+						[[28, 62], [74, 62], [74, 86], [28, 86]], '2.7x’, 72%
+						[[18, 112], [82, 112], [82, 138], [18, 138]], '63 Mm’, 39%
+        			</pre> -->
+				</div>
+			</div>
+
+			<!-- Modal for Step-by-Step Explanations -->
+			<div id="ml-specialist-modal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<h2>Step-by-Step Results: Time Series Neural Network</h2>
+					<div class="modal-body">
+						<div class="step" id="step1">
+							<h3>Step 1: Feature Selection</h3>
+							<p>We begin by selecting the relevant features for our time series model, ensuring the input
+								data is preprocessed appropriately.</p>
+							<img src="images/features.png" alt="Features Image" class="modal-image">
+						</div>
+						<div class="step" id="step2">
+							<h3>Step 2: Baseline Model</h3>
+							<p>The baseline model is constructed to establish a benchmark for model performance,
+								offering a point of comparison for more complex models.</p>
+							<img src="images/baseline.png" alt="Baseline Model" class="modal-image">
+						</div>
+						<div class="step" id="step3">
+							<h3>Step 3: Linear Model</h3>
+							<p>We develop a simple linear model as an initial step, observing the initial improvements
+								over the baseline model.</p>
+							<img src="images/linear.png" alt="Linear Model" class="modal-image">
+						</div>
+						<div class="step" id="step4">
+							<h3>Step 4: Dense Neural Network</h3>
+							<p>The dense neural network adds complexity by introducing multiple layers, enhancing the
+								model's ability to capture intricate patterns.</p>
+							<img src="images/dense.png" alt="Dense Neural Network" class="modal-image">
+						</div>
+						<div class="step" id="step5">
+							<h3>Step 5: CNN Model</h3>
+							<p>A Convolutional Neural Network (CNN) is applied to capture spatial hierarchies in the
+								time series data, further improving predictions.</p>
+							<img src="images/CNN.png" alt="CNN Model" class="modal-image">
+						</div>
+						<div class="step" id="step6">
+							<h3>Step 6: Recurrent Neural Network</h3>
+							<p>We employ a Recurrent Neural Network (RNN) for sequential data modeling, which
+								effectively captures temporal dependencies.</p>
+							<img src="images/RecurrentNN.png" alt="RNN Model" class="modal-image">
+						</div>
+						<div class="step" id="step7">
+							<h3>Step 7: Performance Comparison</h3>
+							<p>Finally, we compare the performance of each model to the baseline to determine the best
+								approach for the problem.</p>
+							<img src="images/performance.png" alt="Performance Comparison" class="modal-image">
+						</div>
+					</div>
+					<div class="modal-navigation">
+						<button id="prev-btn">Previous</button>
+						<button id="next-btn">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<footer>
+				<p>Interested in my education? Take a look below!</p>
+				<a href="#education" class="button large scrolly">See my educational background</a>
 			</footer>
 		</div>
 	</article>
+
+	<!-- Education Section -->
+	<article id="education" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Education</h2>
+				<p>Formal training and educational background.</p>
+			</header>
+			<div class="education-grid">
+				<div class="education-card">
+					<h3>Bachelor of Computer Science</h3>
+					<p><strong>Thomas More University of Applied Sciences</strong> | 2021 - 2024</p>
+					<ul>
+						<li>Specialization in Artificial Intelligence</li>
+						<li>Graduated Cum Laude with a thesis on Medical Image Processing with AI.</li>
+					</ul>
+				</div>
+				<div class="education-card">
+					<h3>Full-Stack Web Development Course</h3>
+					<p><strong>HYF</strong> - Brussels, Belgium | 2019 - 2020</p>
+					<ul>
+						<li>Gained hands-on experience in HTML, CSS, JavaScript, and React.</li>
+					</ul>
+				</div>
+			</div>
+			<footer>
+				<p>Interested in my volunteer work? Take a look below!</p>
+				<a href="#volunteer" class="button large scrolly">See my volunteer experience</a>
+			</footer>
+		</div>
+	</article>
+
+	<!-- Volunteer Section -->
+	<article id="volunteer" class="wrapper style2">
+		<div class="container">
+			<header>
+				<h2>Volunteer Work</h2>
+				<p>Giving back to the community.</p>
+			</header>
+			<div class="volunteer-grid">
+				<!-- React Website Development Codeathon -->
+				<div class="volunteer-card">
+					<h3>React Website Development - Red Cross CBS Codeathon 6.0</h3>
+					<p><strong>The EGG Brussels</strong> | 17/10/2019 – 19/10/2019</p>
+					<ul>
+						<li>Improved and developed various functionalities, including:</li>
+						<li>A custom-developed SMS gateway.</li>
+						<li>Responsive versions of the report/line list.</li>
+						<li>First versions of two analytics graphs.</li>
+						<li>A mobile reporting application.</li>
+						<li>Improvements to the CBS website and a light version of analytics for limited bandwidth
+							connections.</li>
+					</ul>
+					<p><strong>Read more:</strong> <a
+							href="https://medium.com/redcrosscbs/codeathon-6-0-brussels-242b6f34e31e"
+							target="_blank">Medium Article</a></p>
+				</div>
+
+				<!-- Open Knowledge Belgium Software Development Bootcamp -->
+				<div class="volunteer-card">
+					<h3>Open Knowledge Belgium OpenStreetMap Software Development Bootcamp</h3>
+					<p><strong>Open Knowledge Belgium |Gent - De Krook</strong> | 15/01/2020 – 29/02/2020</p>
+					<ul>
+						<li>Worked on developing software using OpenStreetMap API to help small campers locate and
+							reserve bivakzones better and easier.</li>
+						<li>Collaborated in teams of 3 and practiced real-world application development.</li>
+						<li>Interacted with users of the old bivakzone website to gather feedback and improve the
+							application.</li>
+					</ul>
+					<p><strong>View the project:</strong> <a
+							href="https://github.com/prgrmfl/BootCamp-Bivakzone?organization=prgrmfl"
+							target="_blank">GitHub Repository</a></p>
+					<p><strong>New Platform:</strong> <a href="https://welcometomygarden.org/" target="_blank">Welcome
+							to My Garden</a></p>
+				</div>
+
+				<!-- Rode Kruis Volunteer Work -->
+				<div class="volunteer-card">
+					<h3>Rode Kruis Volunteer</h3>
+					<p><strong>Ongoing</strong></p>
+					<ul>
+						<li>Participate in occasional volunteering activities organized by Rode Kruis.</li>
+						<li>Regularly donate blood to support community health initiatives.</li>
+						<li>Engaged in local events promoting safety and emergency preparedness.</li>
+					</ul>
+				</div>
+			</div>
+
+			<footer>
+				<p>Interested in my hobbies? Take a look below!</p>
+				<a href="#hobbies" class="button large scrolly">See my hobbies and interests</a>
+			</footer>
+		</div>
+	</article>
+
+
+	<!-- Hobbies Section -->
+	<article id="hobbies" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Hobbies & Interests</h2>
+				<p>What I enjoy in my free time.</p>
+			</header>
+			<div class="hobbies-grid">
+				<div class="hobby-card">
+					<i class="fas fa-skiing fa-3x"></i>
+					<h3>Skiing</h3>
+				</div>
+				<div class="hobby-card">
+					<i class="fas fa-basketball-ball fa-3x"></i>
+					<h3>Basketball</h3>
+				</div>
+				<div class="hobby-card">
+					<i class="fas fa-plane fa-3x"></i>
+					<h3>Travelling</h3>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<p>Are you interested in my profile? For colloboration, questions, recommendations or a quick chat, just
+				connect with me!
+			</p>
+			<a href="#contact" class="button large scrolly">Get in touch with me</a>
+		</footer>
+	</article>
+
+
+
 
 	<!-- Contact Section -->
 	<article id="contact" class="wrapper style4">
