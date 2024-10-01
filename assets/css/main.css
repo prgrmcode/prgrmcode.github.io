@@ -399,12 +399,439 @@ footer > p {
   }
 }
 
+/* Work Experience Section */
+.experience-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.experience-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  flex-basis: calc(50% - 20px); /* 2 cards per row */
+}
+
+.experience-card h3 {
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.experience-card ul {
+  margin-top: 10px;
+}
+
+.experience-card ul li {
+  list-style: none;
+  padding: 5px 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Education Section */
+/* .education-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.education-card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex-basis: calc(50% - 20px);
+}
+
+.education-card h3 {
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.education-card ul {
+  margin-top: 10px;
+}
+
+.education-card ul li {
+  list-style: none;
+  padding: 5px 0;
+  color: #555;
+  font-size: 0.9rem;
+} */
+
+/* Volunteer Section */
+.volunteer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.volunteer-card {
+  background-color: #e7f3fe;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex-basis: calc(50% - 20px);
+}
+
+.volunteer-card h3 {
+  color: #2a72b5;
+  font-size: 1.3rem;
+}
+
+.volunteer-card ul {
+  margin-top: 10px;
+}
+
+.volunteer-card ul li {
+  list-style: none;
+  padding: 5px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Hobbies Section */
+.hobbies-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hobby-card {
+  text-align: center;
+  padding: 20px;
+  flex-basis: calc(33% - 20px);
+  margin-bottom: 20px;
+}
+
+.hobby-card i {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hobby-card h3 {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.tech-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust spacing between logos */
+  margin-bottom: 10px; /* Space below the logos */
+}
+
+.tech-icon {
+  height: 64px; /* Uniform size for all icons */
+  width: 64px; /* Uniform size for all icons */
+  transition: transform 0.3s; /* Animation on hover */
+}
+
+.tech-icon:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Work Experience Section Styling */
+#experience {
+  background: linear-gradient(
+    to right,
+    #1a1a2e,
+    #16213e
+  ); /* Gradient background */
+  padding: 60px 20px; /* Spacing around the section */
+  color: #ffffff; /* White text for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+
+#experience header {
+  text-align: center;
+  margin-bottom: 40px; /* Space below the header */
+}
+
+#experience header h2 {
+  font-family: "Montserrat", sans-serif; /* Modern font for title */
+  font-size: 2.5rem;
+  margin-bottom: 10px; /* Space below title */
+  color: #00adb5; /* Bright accent color */
+}
+
+#experience header p {
+  font-size: 1.2rem;
+  color: #eeeeee; /* Light gray for subtext */
+}
+
+/* Grid layout for experience cards */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Responsive columns */
+  gap: 30px; /* Space between cards */
+}
+
+/* Experience Card Styling */
+.experience-card {
+  background: #0f3460; /* Card background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 30px;
+  position: relative; /* For positioning the icon */
+  overflow: hidden; /* Clip children */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation on hover */
+  text-align: center; /* Centered text */
+}
+
+.card-icon {
+  position: absolute;
+  top: -30px; /* Position icon above the card */
+  left: 20px;
+  font-size: 60px; /* Large icon */
+  color: #00adb5; /* Bright accent color for icons */
+}
+
+.experience-card h3 {
+  font-family: "Poppins", sans-serif; /* Modern font for job title */
+  font-size: 1.6rem;
+  margin-top: 50px; /* Space above title */
+  margin-bottom: 10px; /* Space below title */
+  color: #ffffff; /* White title color */
+}
+
+.experience-card p {
+  font-size: 1rem;
+  color: #dddddd; /* Light gray for company info */
+  margin-bottom: 15px; /* Space below company info */
+}
+
+.experience-card ul {
+  list-style-type: none; /* No bullets */
+  padding-left: 0; /* No padding */
+}
+
+.experience-card li {
+  margin-bottom: 10px; /* Space between list items */
+  font-size: 0.9rem; /* Smaller font for bullet points */
+  color: #eeeeee; /* Light gray for bullet point text */
+}
+
+/* Hover Effects for Cards */
+.experience-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+/* Footer Styling */
+#experience footer {
+  text-align: center;
+  margin-top: 40px; /* Space above footer */
+}
+
+#experience footer p {
+  font-size: 1rem;
+  color: #eeeeee; /* Light gray for footer text */
+}
+
+#experience footer a {
+  display: inline-block;
+  margin-top: 15px; /* Space above button */
+  padding: 12px 24px; /* Button padding */
+  background-color: #00adb5; /* Button color */
+  color: #ffffff; /* Button text color */
+  border-radius: 5px; /* Rounded button */
+  text-decoration: none; /* No underline */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover */
+}
+
+#experience footer a:hover {
+  background-color: #009e9a; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 10px; /* Rounded corners */
+  color: #000; /* Text color */
+  position: relative; /* For positioning the close button */
+}
+
+.close {
+  color: #aaa; /* Gray */
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black; /* Dark color on hover */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h2,
+h3,
+h4 {
+  margin: 10px 0; /* Space above and below headings */
+}
+
+pre {
+  background-color: #f1f1f1; /* Light gray background for preformatted text */
+  padding: 10px; /* Space around text */
+  border-radius: 5px; /* Rounded corners */
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.modal-content img {
+  transition: transform 0.2s;
+}
+
+.modal-content img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 50px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #f4f4f4;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Modal Images */
+.modal-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+/* Modal Header and Text */
+h2,
+h3 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Navigation Buttons */
+.modal-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#prev-btn,
+#next-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+  background-color: #555;
+}
+
+/* Step Visibility */
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+/* Responsive Modal */
+@media only screen and (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+  }
+
+  .modal-image {
+    max-height: 300px;
+  }
+
+  h2,
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
 /* Row */
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center align columns */
+  justify-content: space-between; /* Space out the boxes evenly */
   box-sizing: border-box;
   align-items: stretch;
 }
@@ -1633,7 +2060,7 @@ form textarea {
   -webkit-transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   -ms-transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   display: block;
   border: 0;
   padding: 0.75em;
@@ -1790,7 +2217,7 @@ button,
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   position: relative;
   display: inline-block;
   color: #fff !important;
@@ -1927,7 +2354,7 @@ ul.social li a:before {
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  background-color: #444;
+  /* background-color: #444; */
   border-radius: 6px;
   box-shadow: inset 0px 0px 0px 1px #282828,
     inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
@@ -1957,6 +2384,7 @@ ul.social li a.fa-dribbble {
 
 ul.social li a.fa-linkedin-in {
   background-color: #006599;
+  font-size: 2rem;
 }
 
 ul.social li a.fa-tumblr {
@@ -2046,6 +2474,7 @@ ul.actions li:first-child {
 .box {
   display: flex; /* Flexbox for the box */
   flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between;
   align-items: center; /* Center content */
   padding: 20px; /* Padding for the box */
   border: 1px solid #ddd; /* Optional border */
