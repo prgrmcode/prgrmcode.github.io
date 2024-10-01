@@ -432,7 +432,7 @@ footer > p {
 }
 
 /* Education Section */
-.education-grid {
+/* .education-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -460,7 +460,7 @@ footer > p {
   padding: 5px 0;
   color: #555;
   font-size: 0.9rem;
-}
+} */
 
 /* Volunteer Section */
 .volunteer-grid {
@@ -748,7 +748,8 @@ pre {
 }
 
 /* Modal Header and Text */
-h2, h3 {
+h2,
+h3 {
   color: #333;
 }
 
@@ -767,7 +768,8 @@ p {
   cursor: pointer;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -780,7 +782,8 @@ p {
   margin-top: 20px;
 }
 
-#prev-btn, #next-btn {
+#prev-btn,
+#next-btn {
   background-color: #333;
   color: #fff;
   border: none;
@@ -789,7 +792,8 @@ p {
   border-radius: 5px;
 }
 
-#prev-btn:hover, #next-btn:hover {
+#prev-btn:hover,
+#next-btn:hover {
   background-color: #555;
 }
 
@@ -805,23 +809,22 @@ p {
 /* Responsive Modal */
 @media only screen and (max-width: 768px) {
   .modal-content {
-      width: 95%;
+    width: 95%;
   }
 
   .modal-image {
-      max-height: 300px;
+    max-height: 300px;
   }
 
-  h2, h3 {
-      font-size: 18px;
+  h2,
+  h3 {
+    font-size: 18px;
   }
 
   p {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
-
-
 
 /* Row */
 
@@ -2351,7 +2354,7 @@ ul.social li a:before {
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  background-color: #444;
+  /* background-color: #444; */
   border-radius: 6px;
   box-shadow: inset 0px 0px 0px 1px #282828,
     inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
@@ -2381,6 +2384,7 @@ ul.social li a.fa-dribbble {
 
 ul.social li a.fa-linkedin-in {
   background-color: #006599;
+  font-size: 2rem;
 }
 
 ul.social li a.fa-tumblr {

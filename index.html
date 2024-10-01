@@ -12,6 +12,8 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/education.css" />
+	<link rel="stylesheet" href="assets/css/nav.css" />
 	<!-- Add Font Awesome CDN -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -19,18 +21,41 @@
 <body class="is-preload">
 
 	<!-- Nav -->
-	<nav id="nav">
+	<!-- <nav id="nav">
 		<ul class="container">
 			<li><a href="#top">About Me</a></li>
 			<li><a href="#work">Work</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#experience">Experience</a></li> <!-- New Section -->
-			<li><a href="#education">Education</a></li> <!-- New Section -->
-			<li><a href="#volunteer">Volunteer</a></li> <!-- New Section -->
-			<li><a href="#hobbies">Hobbies</a></li> <!-- New Section -->
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#education">Education</a></li>
+			<li><a href="#volunteer">Volunteer</a></li>
+			<li><a href="#hobbies">Hobbies</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
+	</nav> -->
+
+
+	<!-- Nav -->
+	<nav id="nav">
+		<div class="container">
+			<div class="menu-icon" id="menu-icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<ul class="menu" id="menu">
+				<li><a href="#top">About Me</a></li>
+				<li><a href="#work">Work</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#volunteer">Volunteer</a></li>
+				<li><a href="#hobbies">Hobbies</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
 	</nav>
+
 
 	<!-- About Me Section -->
 	<article id="top" class="wrapper style1">
@@ -65,9 +90,15 @@
 						<span class="icon solid featured fa-database"></span>
 						<h3>Data Manipulation & Analysis</h3>
 						<div class="tech-logos">
-							<img src="images/logos/pandas.svg" alt="pandas" class="tech-icon">
-							<img src="images/logos/numpylogo.svg" alt="numpy" class="tech-icon">
-							<img src="images/logos/logo-mysql-170x115.png" alt="mysql" class="tech-icon">
+							<a href="https://pandas.pydata.org/" target="_blank">
+								<img src="images/logos/pandas.svg" alt="pandas" class="tech-icon">
+							</a>
+							<a href="https://numpy.org/" target="_blank">
+								<img src="images/logos/numpylogo.svg" alt="numpy" class="tech-icon">
+							</a>
+							<a href="https://www.mysql.com/" target="_blank">
+								<img src="images/logos/logo-mysql-170x115.png" alt="mysql" class="tech-icon">
+							</a>
 						</div>
 						<p>Expertise in data preprocessing and manipulation using <strong>Pandas</strong>,
 							<strong>NumPy</strong>, and <strong>SQL</strong>.
@@ -78,25 +109,47 @@
 					<section class="box style1">
 						<span class="icon solid featured fa-brain"></span>
 						<h3>Machine Learning & AI</h3>
+
 						<div class="tech-logos">
-							<img src="images/logos/Tensorflow_logo.svg" alt="TensorFlow" class="tech-icon">
-							<img src="images/logos/Keras.svg" alt="Keras" class="tech-icon">
-							<img src="images/logos/PyTorch_logo_icon.svg" alt="PyTorch" class="tech-icon">
-							<img src="images/logos/scikit-learn-logo-without-subtitle.svg" alt="Scikit-Learn"
-								class="tech-icon">
-							<img src="images/logos/OpenCV_logo_black.svg" alt="OpenCV" class="tech-icon">
+							<a href="https://www.tensorflow.org/" target="_blank">
+								<img src="images/logos/Tensorflow_logo.svg" alt="TensorFlow" class="tech-icon">
+							</a>
+							<a href="https://keras.io/" target="_blank">
+								<img src="images/logos/Keras.svg" alt="Keras" class="tech-icon">
+							</a>
+							<a href="https://pytorch.org/" target="_blank">
+								<img src="images/logos/PyTorch_logo_icon.svg" alt="PyTorch" class="tech-icon">
+							</a>
+							<a href="https://scikit-learn.org/" target="_blank">
+								<img src="images/logos/scikit-learn-logo-without-subtitle.svg" alt="Scikit-Learn"
+									class="tech-icon">
+							</a>
+							<a href="https://opencv.org/" target="_blank">
+								<img src="images/logos/OpenCV_logo_black.svg" alt="OpenCV" class="tech-icon">
+							</a>
 						</div>
-						<p>Deep Learning, CNNs, NLP, TensorFlow, Keras, PyTorch, Scikit-Learn, OpenCV, Regression,
-							Classification, Anomaly Detection, Anaconda</p>
+						<p>Deep Learning, CNNs, NLP, <strong>TensorFlow</strong>, <strong>Keras</strong>,
+							<strong>PyTorch</strong>, <strong>Scikit-Learn</strong>, <strong>OpenCV</strong>,
+							Regression,
+							Classification, Anomaly Detection, Anaconda
+						</p>
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
 						<span class="icon solid featured fa-chart-line"></span>
 						<h3>Data Visualization</h3>
+
 						<div class="tech-logos">
-							<img src="images/logos/Matplotlib_icon.svg.png" alt="Matplotlib" class="tech-icon">
-							<img src="images/logos/logo-wide-lightbg.svg" alt="Seaborn" class="tech-icon">
+							<a href="https://matplotlib.org/" target="_blank">
+								<img src="images/logos/Matplotlib_icon.svg.png" alt="Matplotlib" class="tech-icon">
+							</a>
+							<a href="https://seaborn.pydata.org/" target="_blank">
+								<img src="images/logos/logo-wide-lightbg.svg" alt="Seaborn" class="tech-icon">
+							</a>
+							<a href="https://powerbi.microsoft.com/" target="_blank">
+								<img src="images/logos/New_Power_BI_Logo.svg" alt="PowerBI" class="tech-icon">
+							</a>
 						</div>
 						<p>Proficient in visualizing complex data insights with <strong>Matplotlib</strong>,
 							<strong>Seaborn</strong>, and <strong>PowerBI</strong>.
@@ -107,10 +160,17 @@
 					<section class="box style1">
 						<span class="icon solid featured fa-cloud"></span>
 						<h3>Cloud & DevOps</h3>
+
 						<div class="tech-logos">
-							<img src="images/logos/Amazon_Web_Services_Logo.svg.png" alt="Matplotlib" class="tech-icon">
-							<img src="images/logos/docker-logo-blue.svg" alt="Docker" class="tech-icon">
-							<img src="images/logos/Git-Logo-1788C.svg" alt="Git" class="tech-icon">
+							<a href="https://aws.amazon.com/" target="_blank">
+								<img src="images/logos/Amazon_Web_Services_Logo.svg.png" alt="AWS" class="tech-icon">
+							</a>
+							<a href="https://www.docker.com/" target="_blank">
+								<img src="images/logos/docker-logo-blue.svg" alt="Docker" class="tech-icon">
+							</a>
+							<a href="https://git-scm.com/" target="_blank">
+								<img src="images/logos/Git-Logo-1788C.svg" alt="Git" class="tech-icon">
+							</a>
 						</div>
 						<p>Skilled in <strong>AWS</strong> deployment, <strong>Docker</strong> containerization, and
 							using <strong>Git</strong> for version control.</p>
@@ -120,29 +180,70 @@
 					<section class="box style1">
 						<span class="icon solid featured fa-code"></span>
 						<h3>Programming Languages</h3>
+
 						<div class="tech-logos">
-							<img src="images/logos/python-logo-only.svg" alt="Python" class="tech-icon">
-							<img src="images/logos/logo-mysql-170x115.png" alt="SQL" class="tech-icon">
-							<img src="images/logos/C_Programming_Language.svg.png" alt="c" class="tech-icon">
-							<img src="images/logos/ISO_C++_Logo.svg.png" alt="c++" class="tech-icon">
-							<img src="images/logos/HTML5_logo_black.svg" alt="html" class="tech-icon">
-							<img src="images/logos/CSS3_logo_and_wordmark.svg" alt="css" class="tech-icon">
-							<img src="images/logos/Unofficial_JavaScript_logo_2.svg" alt="JavaScript" class="tech-icon">
+							<a href="https://www.python.org/" target="_blank">
+								<img src="images/logos/python-logo-only.svg" alt="Python" class="tech-icon">
+							</a>
+							<a href="https://www.mysql.com/" target="_blank">
+								<img src="images/logos/logo-mysql-170x115.png" alt="SQL" class="tech-icon">
+							</a>
+							<a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">
+								<img src="images/logos/C_Programming_Language.svg.png" alt="C" class="tech-icon">
+							</a>
+							<a href="https://isocpp.org/" target="_blank">
+								<img src="images/logos/ISO_C++_Logo.svg.png" alt="C++" class="tech-icon">
+							</a>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">
+								<img src="images/logos/HTML5_logo_black.svg" alt="HTML" class="tech-icon">
+							</a>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+								<img src="images/logos/CSS3_logo_and_wordmark.svg" alt="CSS" class="tech-icon">
+							</a>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+								<img src="images/logos/Unofficial_JavaScript_logo_2.svg" alt="JavaScript"
+									class="tech-icon">
+							</a>
+							<a href="https://nodejs.org/" target="_blank">
+								<img src="images/logos/nodejsDark.svg" alt="Node.js" class="tech-icon">
+							</a>
 						</div>
-						<p>Python, SQL, C, C++, HTML, CSS, XML, JavaScript, React, Node.js</p>
+						<p><strong>Python</strong>, <strong>C</strong>, <strong>C++</strong>, <strong>HTML</strong>,
+							<strong>CSS</strong>, XML,
+							JavaScript, React, Angular, PHP, <strong>Node.js</strong>
+						</p>
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
 						<span class="icon solid featured fa-file-alt"></span>
 						<h3>Other Technologies</h3>
+
 						<div class="tech-logos">
-							<img src="images/logos/office-1.svg" alt="Office" class="tech-icon">
-							<img src="images/logos/xterm_logo.png" alt="MobaXterm" class="tech-icon">
-							<img src="images/logos/MongoDB_Fores-Green.svg" alt="MongoDB" class="tech-icon">
-							<img src="images/logos/vscode.svg" alt="Visual" class="tech-icon">
+							<a href="https://www.microsoft.com/en-us/microsoft-365" target="_blank">
+								<img src="images/logos/office-1.svg" alt="Office" class="tech-icon">
+							</a>
+							<a href="https://mobaxterm.mobatek.net/" target="_blank">
+								<img src="images/logos/xterm_logo.png" alt="MobaXterm" class="tech-icon">
+							</a>
+							<a href="https://www.json.org/" target="_blank">
+								<img src="images/logos/JSON_vector_logo.svg" alt="JSON" class="tech-icon">
+							</a>
+							<a href="https://www.mongodb.com/" target="_blank">
+								<img src="images/logos/MongoDB_Fores-Green.svg" alt="MongoDB" class="tech-icon">
+							</a>
+							<a href="https://code.visualstudio.com/" target="_blank">
+								<img src="images/logos/vscode.svg" alt="Visual Studio Code" class="tech-icon">
+							</a>
+							<a href="https://jupyter.org/" target="_blank">
+								<img src="images/logos/jupyter-main-logo.svg" alt="Jupyter" class="tech-icon">
+							</a>
+							<a href="https://github.com/" target="_blank">
+								<img src="images/logos/GitHub_Invertocat_Dark.svg" alt="GitHub" class="tech-icon">
+							</a>
 						</div>
-						<p>Microsoft Office, MobaXterm, JSON, MongoDB, MySQL, Visual Studio Code</p>
+						<p>Microsoft Office, MobaXterm, JSON, <strong>MongoDB</strong>, <strong>MySQL</strong>, Visual
+							Studio Code, Jupyter Notebook, GitHub</p>
 					</section>
 				</div>
 
@@ -166,9 +267,10 @@
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
 						<a href="https://github.com/prgrmcode/tr-earthquake-predictor/blob/main/README.md"
-							class="image featured"><img src="images/scatter_plot_Predicted_MAG.png"
+							class="image featured" target="_blank"><img src="images/scatter_plot_Predicted_MAG.png"
 								alt="Earthquake Prediction AI" /></a>
-						<h3><a href="https://github.com/prgrmcode/tr-earthquake-predictor/blob/main/README.md">Earthquake
+						<h3><a href="https://github.com/prgrmcode/tr-earthquake-predictor/blob/main/README.md"
+								target="_blank">Earthquake
 								Prediction AI</a></h3>
 						<p>Used machine learning to predict earthquake magnitudes with an MAE of 0.39.</p>
 
@@ -177,9 +279,10 @@
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
 						<a href="https://github.com/prgrmcode/AI-image-classification-Good-Bad/blob/main/README.md"
-							class="image featured"><img src="images/classification.png"
+							class="image featured" target="_blank"><img src="images/classification.png"
 								alt="Good and Bad classification" /></a>
-						<h3><a href="https://github.com/prgrmcode/AI-image-classification-Good-Bad/blob/main/README.md">AI
+						<h3><a href="https://github.com/prgrmcode/AI-image-classification-Good-Bad/blob/main/README.md"
+								target="_blank">AI
 								Image Classification</a></h3>
 						<p>Classified images with CNNs and Transfer Learning, achieving 99.3% accuracy.</p>
 
@@ -188,9 +291,10 @@
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
 						<a href="https://github.com/prgrmcode/TransferLearningwithDocker/tree/main"
-							class="image featured"><img src="images/flaskapi.png"
+							class="image featured" target="_blank"><img src="images/flaskapi.png"
 								alt="Classification of animals using Flask app" /></a>
-						<h3><a href="https://github.com/prgrmcode/TransferLearningwithDocker/tree/main">Transfer
+						<h3><a href="https://github.com/prgrmcode/TransferLearningwithDocker/tree/main"
+								target="_blank">Transfer
 								Learning with Docker containerazation and deploying in an
 								application</a></h3>
 						<p>This is a AI classification project using PyTorch and 2 classes. Used trained model in a
@@ -247,11 +351,12 @@
 						<li>Developed AI solutions in medical imaging, awarded a patent for innovation.</li>
 						<li>Optimized CNN architectures, improving diagnostic accuracy by 71.43%.</li>
 						<li>Collaborated cross-functionally to convert business needs into AI solutions.</li>
+						<li><a href="#barco-modal" class="open-barco-modal">Learn more about the project</a></li>
 					</ul>
 				</div>
 
 				<!-- Experience Card for Thomas More -->
-				<div class="experience-card">
+				<div class="experience-card" id="ml-card">
 					<h3>Machine Learning Specialist</h3>
 					<p><strong>Thomas More Power Energy Company</strong> - Sint-Katelijne-Waver, Belgium | 09/2021 -
 						06/2022</p>
@@ -396,31 +501,108 @@
 		<div class="container">
 			<header>
 				<h2>Education</h2>
-				<p>Formal training and educational background.</p>
+				<p>Formal training, hands-on experience, and educational background.</p>
 			</header>
 			<div class="education-grid">
+				<!-- Bachelor of Computer Science Card -->
 				<div class="education-card">
 					<h3>Bachelor of Computer Science</h3>
+					<h4>Specialization in Artificial Intelligence</h4>
 					<p><strong>Thomas More University of Applied Sciences</strong> | 2021 - 2024</p>
 					<ul>
-						<li>Specialization in Artificial Intelligence</li>
-						<li>Graduated Cum Laude with a thesis on Medical Image Processing with AI.</li>
+						<li>Graduated <strong>Cum Laude</strong> with a thesis on <strong>Medical Image Processing using
+								AI</strong>.</li>
+						<li><strong>Skills Acquired:</strong> Python, TensorFlow, Keras, YOLO, EasyOCR, OpenCV, PyTorch.
+						</li>
 					</ul>
+
+					<div class="load-more-content" style="display: none;">
+						<ul>
+							<li><strong>Key Achievements:</strong> Developed AI-powered
+								medical
+								imaging solutions that
+								improved diagnostic accuracy by 71.43%.</li>
+
+							<li><strong>Soft Skills:</strong> Collaboration
+								with cross-functional teams,
+								problem-solving,
+								and innovative thinking.</li>
+						</ul>
+
+						<strong>Practical Experience, Industry Exposure:</strong>
+						<p>Gained deep knowledge of AI frameworks, machine learning, and neural networks through
+							real-world projects.</p>
+						<ul class="guest-lectures">
+							<li>Engaged in guest lectures and workshops by industry leaders from top AI, healthcare,
+								and technology companies.</li>
+							<li>Hands-on experience with real-world datasets and practical problem-solving
+								scenarios.</li>
+							<li>Gained practical problem-solving experience through real-world projects involving:
+								<ul>
+									<li>Computer vision, deep learning, and medical imaging.</li>
+									<li>NLP, AI applications in healthcare, finance, and traffic
+										management.</li>
+									<li>Large Language Models (LLMs) and AI pipelines.</li>
+								</ul>
+							</li>
+
+							<li>Workshops on AI ethics, business applications, adversarial learning, MLOps, and
+								deployment strategies in real-world environments.</li>
+						</ul>
+					</div>
+					<!-- Load More Button -->
+					<button class="load-more-btn">Load More</button>
 				</div>
+
+				<!-- Full-Stack Web Development Card -->
 				<div class="education-card">
 					<h3>Full-Stack Web Development Course</h3>
 					<p><strong>HYF</strong> - Brussels, Belgium | 2019 - 2020</p>
 					<ul>
-						<li>Gained hands-on experience in HTML, CSS, JavaScript, and React.</li>
+						<li>Hands-on experience with <strong>HTML, CSS, JavaScript, React, Node.js, and
+								MongoDB</strong>.</li>
+						<li><strong>Key Project:</strong> Built dynamic web applications using modern JavaScript
+							frameworks, focusing on user interactivity and backend integration.</li>
 					</ul>
+					<div class="load-more-content" style="display: none;">
+						<strong>Soft Skills:</strong> Teamwork, communication, and project management under
+						tight deadlines. Presented projects to non-technical audiences, gaining insights into industry
+						practices.
+					</div>
+					<!-- Load More Button -->
+					<button class="load-more-btn">Load More</button>
+				</div>
+
+				<div class="education-card">
+					<h3>Bachelor of Systems Engineering</h3>
+					<h4>Specialisation in Mechanical Engineering</h4>
+					<p><strong>N.D.U</strong> - Ankara, Turkey | 2010 - 2014</p>
+					<ul>
+						<li>Graduated with distinction in Systems Engineering.</li>
+						<li>Gained expertise in system analysis, design, and engineering processes.</li>
+					</ul>
+					<div class="load-more-content" style="display: none;">
+						<strong>Key Skills:</strong> Systems analysis, problem-solving, and teamwork.
+					</div>
+					<button class="load-more-btn">Load More</button>
 				</div>
 			</div>
+
 			<footer>
 				<p>Interested in my volunteer work? Take a look below!</p>
 				<a href="#volunteer" class="button large scrolly">See my volunteer experience</a>
 			</footer>
 		</div>
 	</article>
+
+	<!-- Modal Structure -->
+	<div id="education-modal" class="modal">
+		<div class="modal-content">
+			<span class="close-btn">&times;</span>
+			<div id="modal-body"></div>
+		</div>
+	</div>
+
 
 	<!-- Volunteer Section -->
 	<article id="volunteer" class="wrapper style2">
@@ -506,6 +688,18 @@
 					<i class="fas fa-plane fa-3x"></i>
 					<h3>Travelling</h3>
 				</div>
+				<div class="hobby-card">
+					<i class="fas fa-camera-retro fa-3x"></i>
+					<h3>Sightseeing</h3>
+				</div>
+				<div class="hobby-card">
+					<i class="fas fa-book fa-3x"></i>
+					<h3>Reading</h3>
+				</div>
+				<div class="hobby-card">
+					<i class="fas fa-theater-masks fa-3x"></i>
+					<h3>Theaters</h3>
+				</div>
 			</div>
 		</div>
 
@@ -558,9 +752,10 @@
 					<hr />
 					<h3>Find me on ...</h3>
 					<ul class="social">
-						<li><a href="https://linkedin.com/in/harun-k" class="icon brands fa-linkedin-in"><span
+						<li><a href="https://linkedin.com/in/harun-k"
+								class="icon brands fa-brands fa-linkedin-in fa-xl"><span
 									class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/prgrmcode" class="icon brands fa-github"><span
+						<li><a href="https://github.com/prgrmcode" class="icon brands fa-brands fa-github fa-xl "><span
 									class="label">Github</span></a></li>
 
 						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -599,6 +794,8 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 
+
 </body>
+
 
 </html>
