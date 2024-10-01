@@ -118,6 +118,40 @@
 		}
 	});
 
+
+	// Armentekart Modal functionality
+    var armenModal = document.getElementById("armen-modal");
+    var armenCard = document.getElementById("armen-card");
+	const openArmenModal = document.querySelector('.open-armen-modal');  // Trigger for opening the modal
+	const closeArmenModal = armenModal.querySelector('.close');  // The close button inside the modal
+
+    // Open the modal when the Armen card is clicked
+    armenCard.onclick = function() {
+        armenModal.style.display = "block";
+    }
+
+	// Open the Armen modal when the link is clicked
+	openArmenModal.addEventListener('click', function() {
+		armenModal.style.display = "block";
+	});
+
+
+	// Close the Armen modal when the close button is clicked
+	closeArmenModal.addEventListener('click', function() {
+		armenModal.style.display = 'none';
+	});
+
+	// Close the Armen modal when clicking anywhere outside of the modal
+	window.addEventListener('click', function(event) {
+		if (event.target === armenModal) {
+			armenModal.style.display = 'none';
+		}
+	});
+
+
+
+
+	// Modal functionality for Education cards
 	document.addEventListener('DOMContentLoaded', function() {
 		const modal = document.getElementById('education-modal');
 		const modalContent = document.getElementById('modal-body');
@@ -166,7 +200,8 @@
 		});
 	});
 
-	// Mobile navigation
+
+	// Mobile navigation for nav bar
 	document.addEventListener('DOMContentLoaded', function() {
 		var menuIcon = document.getElementById('menu-icon');
 		var menu = document.getElementById('menu');
