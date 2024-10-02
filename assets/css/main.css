@@ -214,8 +214,8 @@ a {
   -webkit-transition: color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
-  color: #43b3e0;
-  text-decoration: underline;
+  /* color: #43b3e0; */
+  /* text-decoration: underline; */
 }
 
 a:hover {
@@ -294,7 +294,7 @@ h1 strong {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.2rem;
   letter-spacing: -0.015em;
 }
 
@@ -415,11 +415,6 @@ footer > p {
   flex-basis: calc(50% - 20px); /* 2 cards per row */
 }
 
-.experience-card h3 {
-  color: #333;
-  font-size: 1.4rem;
-}
-
 .experience-card ul {
   margin-top: 10px;
 }
@@ -471,11 +466,24 @@ footer > p {
 
 .volunteer-card {
   background-color: #e7f3fe;
+  background-color: #cdf1e7;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
   flex-basis: calc(50% - 20px);
 }
+
+/* .volunteer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+} */
 
 .volunteer-card h3 {
   color: #2a72b5;
@@ -489,10 +497,29 @@ footer > p {
 .volunteer-card ul li {
   list-style: none;
   padding: 5px 0;
-  color: #666;
+  color: #01010f;
   font-size: 0.9rem;
 }
 
+/* Responsive adjustments */
+@media screen and (max-width: 980px) {
+  .volunteer-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .volunteer-card {
+    width: 70%;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .volunteer-card {
+    width: 90%;
+    max-width: 100%;
+  }
+}
 /* Hobbies Section */
 .hobbies-grid {
   display: flex;
@@ -606,6 +633,9 @@ footer > p {
   font-size: 1rem;
   color: #dddddd; /* Light gray for company info */
   margin-bottom: 15px; /* Space below company info */
+}
+.experience-card strong {
+  color: #dddddd; /* Light gray for company info */
 }
 
 .experience-card ul {
@@ -816,7 +846,10 @@ p {
     max-height: 300px;
   }
 
-  h2,
+  h2 {
+    font-size: 2rem;
+  }
+
   h3 {
     font-size: 18px;
   }
@@ -2848,6 +2881,10 @@ body > article {
   h1 {
     font-size: 2.25em;
     line-height: 1.25em;
+  }
+
+  h2 {
+    font-size: 2em;
   }
 
   header {

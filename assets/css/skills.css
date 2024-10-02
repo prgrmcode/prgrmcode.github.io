@@ -1,0 +1,39 @@
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card .tech-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.card .tech-logos a {
+  margin: 0.5em;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 980px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

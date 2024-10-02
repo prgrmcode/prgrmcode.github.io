@@ -12,8 +12,11 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/education.css" />
 	<link rel="stylesheet" href="assets/css/nav.css" />
+	<link rel="stylesheet" href="assets/css/education.css" />
+	<link rel="stylesheet" href="assets/css/skills.css" />
+	<link rel="stylesheet" href="assets/css/portfolio.css" />
+
 	<!-- Add Font Awesome CDN -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -45,7 +48,7 @@
 			</div>
 			<ul class="menu" id="menu">
 				<li><a href="#top">About Me</a></li>
-				<li><a href="#work">Work</a></li>
+				<li><a href="#work">Skills</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#experience">Experience</a></li>
 				<li><a href="#education">Education</a></li>
@@ -71,7 +74,7 @@
 					<p>I am a Data Scientist with expertise in AI, machine learning, and data analysis. With a strong
 						background in predictive modeling and deep learning, I enjoy turning
 						data into actionable insights to help businesses thrive.</p>
-					<a href="#work" class="button large scrolly">Learn more about me</a>
+					<a href="#work" class="button medium scrolly">Learn more about me</a>
 				</div>
 			</div>
 		</div>
@@ -84,9 +87,9 @@
 				<h2>Technical Skills & Expertise</h2>
 				<p>Highlighting proficiency in Data Science, AI, and related technologies</p>
 			</header>
-			<div class="row aln-center">
+			<div class="row aln-center card-container">
 				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
+					<section class="box style1 card">
 						<span class="icon solid featured fa-database"></span>
 						<h3>Data Manipulation & Analysis</h3>
 						<div class="tech-logos">
@@ -106,7 +109,7 @@
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
+					<section class="box style1 card">
 						<span class="icon solid featured fa-brain"></span>
 						<h3>Machine Learning & AI</h3>
 
@@ -136,7 +139,7 @@
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
+					<section class="box style1 card">
 						<span class="icon solid featured fa-chart-line"></span>
 						<h3>Data Visualization</h3>
 
@@ -157,7 +160,7 @@
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
+					<section class="box style1 card">
 						<span class="icon solid featured fa-cloud"></span>
 						<h3>Cloud & DevOps</h3>
 
@@ -177,7 +180,7 @@
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
+					<section class="box style1 card">
 						<span class="icon solid featured fa-code"></span>
 						<h3>Programming Languages</h3>
 
@@ -215,7 +218,7 @@
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
+					<section class="box style1 card">
 						<span class="icon solid featured fa-file-alt"></span>
 						<h3>Other Technologies</h3>
 
@@ -251,7 +254,7 @@
 
 			<footer>
 				<p>Interested in my projects? Take a look below!</p>
-				<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+				<a href="#portfolio" class="button mwdium scrolly">See some of my recent work</a>
 			</footer>
 		</div>
 	</article>
@@ -263,9 +266,9 @@
 				<h2>Projects</h2>
 				<p>A showcase of my recent work in AI and Machine Learning.</p>
 			</header>
-			<div class="row">
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
+			<div class="row portfolio-card-container">
+				<div class="col-4 col-6-medium col-12-small ">
+					<article class="box style2 portfolio-card">
 						<a href="https://github.com/prgrmcode/tr-earthquake-predictor/blob/main/README.md"
 							class="image featured" target="_blank"><img src="images/scatter_plot_Predicted_MAG.png"
 								alt="Earthquake Prediction AI" /></a>
@@ -273,11 +276,24 @@
 								target="_blank">Earthquake
 								Prediction AI</a></h3>
 						<p>Used machine learning to predict earthquake magnitudes with an MAE of 0.39.</p>
-
+						<p><strong> Goal:</strong> The primary objective of this AI project is to achieve a predictive
+							performance that demonstrates a Mean Absolute Error (MAE) of at most 0.45,
+							indicating accurate and robust earthquake magnitude prediction.
+							By achieving this performance benchmarks, the project aims to develop
+							a machine learning model that can effectively predict earthquake magnitudes,
+							contributing to our understanding of seismic events and supporting earthquake
+							preparedness efforts.</p>
+						<p><strong>Data preprocessing: </strong>Data cleaning, Pre-processing,
+							Feature engineering and Splitting the Data</p>
+						<p><strong>Methods: </strong>Random Forest Regression, Gradient Boosting Regression , Support
+							Vector Regression (SVR) (regression version of Support Vector
+							Machine (SVM)), Neural Networks using TensorFlow/Keras, XGBoost Regression</p>
+						<p><strong>Hyperparameter Tuning:
+							</strong>Random Search, Bayesian Optimization</p>
 					</article>
 				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
+				<div class="col-4 col-6-medium col-12-small ">
+					<article class="box style2 portfolio-card">
 						<a href="https://github.com/prgrmcode/AI-image-classification-Good-Bad/blob/main/README.md"
 							class="image featured" target="_blank"><img src="images/classification.png"
 								alt="Good and Bad classification" /></a>
@@ -285,11 +301,45 @@
 								target="_blank">AI
 								Image Classification</a></h3>
 						<p>Classified images with CNNs and Transfer Learning, achieving 99.3% accuracy.</p>
+						<p><strong> Problem we are trying to solve:</strong> To build a Machine Learning model, that can
+							evaluate images
+							as good or bad so that company can use the model to classify the images taken by 4
+							cameras. This is a project to classify images from QA dataset from the AI4IM
+							project.
+						</p>
+
+						<figure>
+							<figcaption><strong>Using AI principles:</strong></figcaption>
+							<ul class="left-aligned-list">
+								<li>Feature engineering</li>
+								<li>Hyperparameter tuning</li>
+								<li>Detect & avoid overfitting</li>
+								<li>Method selection</li>
+								<li>Appropriate performance criteria</li>
+								<li>Test the result on independent test set</li>
+							</ul>
+						</figure>
+
+
+						<!-- <p> - Feature engineering
+							- Hyperparameter tuning
+							- Detect & avoid overfitting
+							- Method selection
+							- Appropriate performance criteria
+							- Test the result on independent test set
+						</p> -->
+						<p><strong>Challenge => </strong> To build a single class classifier that has trained on
+							enough
+							good images so
+							that it can detect bad images by only looking at them as seeing they are not good
+							images, so
+							that
+							classify them as not good=bad images</p>
 
 					</article>
 				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
+				<div class="col-4 col-6-medium col-12-small ">
+					<article class="box style2 portfolio-card">
 						<a href="https://github.com/prgrmcode/TransferLearningwithDocker/tree/main"
 							class="image featured" target="_blank"><img src="images/flaskapi.png"
 								alt="Classification of animals using Flask app" /></a>
@@ -300,36 +350,30 @@
 						<p>This is a AI classification project using PyTorch and 2 classes. Used trained model in a
 							Flask application and showed the AI classification prediction results on web page. Also
 							using two Docker containers with base images from Nvidia's nvidia/cuda from Docker hub.
-
 						</p>
+						<p>This project demonstrates transfer learning using ResNet18 for image classification. The
+							model was trained on a dataset of hymenoptera images and deployed using a Flask application.
+						</p>
+
+						<p><strong>Technologies:</strong> PyTorch, ResNet18, Flask, Docker</p>
+
+						<figure>
+							<figcaption><strong>Key Features:</strong></figcaption>
+							<ul class="left-aligned-list">
+								<li>Data preprocessing with normalization</li>
+								<li>Training with data augmentation</li>
+								<li>Model fine-tuning and evaluation</li>
+								<li>Deployment in a Flask web application</li>
+							</ul>
+						</figure>
+
 					</article>
 				</div>
-				<!-- <div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-						<h3><a href="#">Tempus dolore</a></h3>
-						<p>Ornare nulla proin odio consequat.</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-						<h3><a href="#">Feugiat aliquam</a></h3>
-						<p>Ornare nulla proin odio consequat.</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-						<h3><a href="#">Sed amet ornare</a></h3>
-						<p>Ornare nulla proin odio consequat.</p>
-					</article>
-				</div> -->
 			</div>
 
 			<footer>
 				<p>Interested in my experience? Take a look below!</p>
-				<a href="#experience" class="button large scrolly">See some of my recent experience</a>
+				<a href="#experience" class="button medium scrolly">See some of my recent experience</a>
 			</footer>
 
 		</div>
@@ -531,7 +575,7 @@
 
 			<footer>
 				<p>Interested in my education? Take a look below!</p>
-				<a href="#education" class="button large scrolly">See my educational background</a>
+				<a href="#education" class="button medium scrolly">See my educational background</a>
 			</footer>
 		</div>
 	</article>
@@ -548,8 +592,11 @@
 				<div class="education-card">
 					<h3>Bachelor of Computer Science</h3>
 					<h4>Specialization in Artificial Intelligence</h4>
-					<p><strong>Thomas More University of Applied Sciences</strong> | 2021 - 2024</p>
-					<ul>
+					<p><strong>Thomas More University of Applied Sciences</strong> - Sint-Katelijne-Waver, Belgium |
+						2021
+						- 2024</p>
+
+					<ul class="education-list">
 						<li>Graduated <strong>Cum Laude</strong> with a thesis on <strong>Medical Image Processing using
 								AI</strong>.</li>
 						<li><strong>Skills Acquired:</strong> Python, TensorFlow, Keras, YOLO, EasyOCR, OpenCV, PyTorch.
@@ -557,22 +604,20 @@
 					</ul>
 
 					<div class="load-more-content" style="display: none;">
-						<ul>
-							<li><strong>Key Achievements:</strong> Developed AI-powered
-								medical
-								imaging solutions that
-								improved diagnostic accuracy by 71.43%.</li>
+						<p><strong>Key Achievements:</strong> Developed AI-powered
+							medical
+							imaging solutions that
+							improved diagnostic accuracy by 71.43%.</p>
 
-							<li><strong>Soft Skills:</strong> Collaboration
-								with cross-functional teams,
-								problem-solving,
-								and innovative thinking.</li>
-						</ul>
+						<p><strong>Soft Skills:</strong> Collaboration
+							with cross-functional teams,
+							problem-solving,
+							and innovative thinking.</p>
 
 						<strong>Practical Experience, Industry Exposure:</strong>
 						<p>Gained deep knowledge of AI frameworks, machine learning, and neural networks through
 							real-world projects.</p>
-						<ul class="guest-lectures">
+						<ul class="guest-lectures education-list">
 							<li>Engaged in guest lectures and workshops by industry leaders from top AI, healthcare,
 								and technology companies.</li>
 							<li>Hands-on experience with real-world datasets and practical problem-solving
@@ -598,7 +643,7 @@
 				<div class="education-card">
 					<h3>Full-Stack Web Development Course</h3>
 					<p><strong>HYF</strong> - Brussels, Belgium | 2019 - 2020</p>
-					<ul>
+					<ul class="education-list">
 						<li>Hands-on experience with <strong>HTML, CSS, JavaScript, React, Node.js, and
 								MongoDB</strong>.</li>
 						<li><strong>Key Project:</strong> Built dynamic web applications using modern JavaScript
@@ -616,8 +661,8 @@
 				<div class="education-card">
 					<h3>Bachelor of Systems Engineering</h3>
 					<h4>Specialisation in Mechanical Engineering</h4>
-					<p><strong>N.D.U</strong> - Ankara, Turkey | 2010 - 2014</p>
-					<ul>
+					<p><strong>Turkish State University</strong> - Ankara, Turkey | 2010 - 2014</p>
+					<ul class="education-list">
 						<li>Graduated with distinction in Systems Engineering.</li>
 						<li>Gained expertise in system analysis, design, and engineering processes.</li>
 					</ul>
@@ -649,7 +694,7 @@
 		<div class="container">
 			<header>
 				<h2>Volunteer Work</h2>
-				<p>Giving back to the community.</p>
+				<p>Contributing to the community through various initiatives.</p>
 			</header>
 			<div class="volunteer-grid">
 				<!-- React Website Development Codeathon -->
@@ -702,7 +747,7 @@
 
 			<footer>
 				<p>Interested in my hobbies? Take a look below!</p>
-				<a href="#hobbies" class="button large scrolly">See my hobbies and interests</a>
+				<a href="#hobbies" class="button medium scrolly">See my hobbies and interests</a>
 			</footer>
 		</div>
 	</article>
@@ -729,8 +774,8 @@
 					<h3>Travelling</h3>
 				</div>
 				<div class="hobby-card">
-					<i class="fas fa-camera-retro fa-3x"></i>
-					<h3>Sightseeing</h3>
+					<i class="fas fa-table-tennis fa-3x"></i>
+					<h3>Table Tennis</h3>
 				</div>
 				<div class="hobby-card">
 					<i class="fas fa-book fa-3x"></i>
@@ -740,6 +785,8 @@
 					<i class="fas fa-theater-masks fa-3x"></i>
 					<h3>Theaters</h3>
 				</div>
+
+
 			</div>
 		</div>
 

@@ -10,6 +10,7 @@
   cursor: default;
   height: 3.5em;
   line-height: 3.5em;
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
 }
 
 #nav .container {
@@ -30,6 +31,7 @@
   height: 3px;
   margin: 4px 0;
   width: 25px;
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for span color */
 }
 
 #nav ul {
@@ -93,14 +95,22 @@
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #282828;
+    background-color: rgba(
+      32,
+      29,
+      29,
+      0.97
+    ); /* Slightly transparent background */
+
     position: absolute;
     top: 3.5em;
     left: 0;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
   }
 
   #nav ul.show {
     display: flex;
+    opacity: 1; /* Show the menu */
   }
 
   #nav li {
