@@ -1,0 +1,65 @@
+/* Card Container */
+.portfolio-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.portfolio-card .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+figcaption {
+  text-align: left;
+}
+
+.left-aligned-list {
+  list-style-type: "-";
+  padding-left: 1.5em; /* Adjust padding as needed */
+  text-align: left;
+}
+
+.left-aligned-list li {
+  margin-bottom: 0.5em; /* Adjust margin as needed */
+}
+
+.portfolio-card .tech-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.portfolio-card .tech-logos a {
+  margin: 0.5em;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 980px) {
+  .portfolio-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-card {
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .portfolio-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}

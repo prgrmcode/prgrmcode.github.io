@@ -201,13 +201,31 @@
 	});
 
 
-	// Mobile navigation for nav bar
+	// // Mobile navigation for nav bar
+	// document.addEventListener('DOMContentLoaded', function() {
+	// 	var menuIcon = document.getElementById('menu-icon');
+	// 	var menu = document.getElementById('menu');
+	
+	// 	menuIcon.addEventListener('click', function() {
+	// 		menu.classList.toggle('show');
+	// 	});
+	// });
+
 	document.addEventListener('DOMContentLoaded', function() {
-		var menuIcon = document.getElementById('menu-icon');
-		var menu = document.getElementById('menu');
+		const menuIcon = document.getElementById('menu-icon');
+		const menu = document.getElementById('menu');
+		const navLinks = menu.querySelectorAll('a');
 	
 		menuIcon.addEventListener('click', function() {
 			menu.classList.toggle('show');
+		});
+	
+		navLinks.forEach(link => {
+			link.addEventListener('click', function() {
+				if (menu.classList.contains('show')) {
+					menu.classList.remove('show');
+				}
+			});
 		});
 	});
 	
