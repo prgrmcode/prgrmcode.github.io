@@ -49,8 +49,8 @@
 			<ul class="menu" id="menu">
 				<li><a href="#top">About Me</a></li>
 				<li><a href="#work">Skills</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#experience">Experience</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#education">Education</a></li>
 				<li><a href="#volunteer">Volunteer</a></li>
 				<li><a href="#hobbies">Hobbies</a></li>
@@ -259,125 +259,7 @@
 		</div>
 	</article>
 
-	<!-- Portfolio Section -->
-	<article id="portfolio" class="wrapper style3">
-		<div class="container">
-			<header>
-				<h2>Projects</h2>
-				<p>A showcase of my recent work in AI and Machine Learning.</p>
-			</header>
-			<div class="row portfolio-card-container">
-				<div class="col-4 col-6-medium col-12-small ">
-					<article class="box style2 portfolio-card">
-						<a href="https://github.com/prgrmcode/tr-earthquake-predictor/blob/main/README.md"
-							class="image featured" target="_blank"><img src="images/scatter_plot_Predicted_MAG.png"
-								alt="Earthquake Prediction AI" /></a>
-						<h3><a href="https://github.com/prgrmcode/tr-earthquake-predictor/blob/main/README.md"
-								target="_blank">Earthquake
-								Prediction AI</a></h3>
-						<p>Used machine learning to predict earthquake magnitudes with an MAE of 0.39.</p>
-						<p><strong> Goal:</strong> The primary objective of this AI project is to achieve a predictive
-							performance that demonstrates a Mean Absolute Error (MAE) of at most 0.45,
-							indicating accurate and robust earthquake magnitude prediction.
-							By achieving this performance benchmarks, the project aims to develop
-							a machine learning model that can effectively predict earthquake magnitudes,
-							contributing to our understanding of seismic events and supporting earthquake
-							preparedness efforts.</p>
-						<p><strong>Data preprocessing: </strong>Data cleaning, Pre-processing,
-							Feature engineering and Splitting the Data</p>
-						<p><strong>Methods: </strong>Random Forest Regression, Gradient Boosting Regression , Support
-							Vector Regression (SVR) (regression version of Support Vector
-							Machine (SVM)), Neural Networks using TensorFlow/Keras, XGBoost Regression</p>
-						<p><strong>Hyperparameter Tuning:
-							</strong>Random Search, Bayesian Optimization</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small ">
-					<article class="box style2 portfolio-card">
-						<a href="https://github.com/prgrmcode/AI-image-classification-Good-Bad/blob/main/README.md"
-							class="image featured" target="_blank"><img src="images/classification.png"
-								alt="Good and Bad classification" /></a>
-						<h3><a href="https://github.com/prgrmcode/AI-image-classification-Good-Bad/blob/main/README.md"
-								target="_blank">AI
-								Image Classification</a></h3>
-						<p>Classified images with CNNs and Transfer Learning, achieving 99.3% accuracy.</p>
-						<p><strong> Problem we are trying to solve:</strong> To build a Machine Learning model, that can
-							evaluate images
-							as good or bad so that company can use the model to classify the images taken by 4
-							cameras. This is a project to classify images from QA dataset from the AI4IM
-							project.
-						</p>
 
-						<figure>
-							<figcaption><strong>Using AI principles:</strong></figcaption>
-							<ul class="left-aligned-list">
-								<li>Feature engineering</li>
-								<li>Hyperparameter tuning</li>
-								<li>Detect & avoid overfitting</li>
-								<li>Method selection</li>
-								<li>Appropriate performance criteria</li>
-								<li>Test the result on independent test set</li>
-							</ul>
-						</figure>
-
-
-						<!-- <p> - Feature engineering
-							- Hyperparameter tuning
-							- Detect & avoid overfitting
-							- Method selection
-							- Appropriate performance criteria
-							- Test the result on independent test set
-						</p> -->
-						<p><strong>Challenge => </strong> To build a single class classifier that has trained on
-							enough
-							good images so
-							that it can detect bad images by only looking at them as seeing they are not good
-							images, so
-							that
-							classify them as not good=bad images</p>
-
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small ">
-					<article class="box style2 portfolio-card">
-						<a href="https://github.com/prgrmcode/TransferLearningwithDocker/tree/main"
-							class="image featured" target="_blank"><img src="images/flaskapi.png"
-								alt="Classification of animals using Flask app" /></a>
-						<h3><a href="https://github.com/prgrmcode/TransferLearningwithDocker/tree/main"
-								target="_blank">Transfer
-								Learning with Docker containerazation and deploying in an
-								application</a></h3>
-						<p>This is a AI classification project using PyTorch and 2 classes. Used trained model in a
-							Flask application and showed the AI classification prediction results on web page. Also
-							using two Docker containers with base images from Nvidia's nvidia/cuda from Docker hub.
-						</p>
-						<p>This project demonstrates transfer learning using ResNet18 for image classification. The
-							model was trained on a dataset of hymenoptera images and deployed using a Flask application.
-						</p>
-
-						<p><strong>Technologies:</strong> PyTorch, ResNet18, Flask, Docker</p>
-
-						<figure>
-							<figcaption><strong>Key Features:</strong></figcaption>
-							<ul class="left-aligned-list">
-								<li>Data preprocessing with normalization</li>
-								<li>Training with data augmentation</li>
-								<li>Model fine-tuning and evaluation</li>
-								<li>Deployment in a Flask web application</li>
-							</ul>
-						</figure>
-
-					</article>
-				</div>
-			</div>
-
-			<footer>
-				<p>Interested in my experience? Take a look below!</p>
-				<a href="#experience" class="button medium scrolly">See some of my recent experience</a>
-			</footer>
-
-		</div>
-	</article>
 
 	<!-- Work Experience Section -->
 	<article id="experience" class="wrapper style2">
@@ -577,6 +459,126 @@
 				<p>Interested in my education? Take a look below!</p>
 				<a href="#education" class="button medium scrolly">See my educational background</a>
 			</footer>
+		</div>
+	</article>
+
+	<!-- Portfolio Section -->
+	<article id="portfolio" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Projects</h2>
+				<p>A showcase of my recent work in AI and Machine Learning.</p>
+			</header>
+			<div class="row portfolio-card-container">
+				<div class="col-4 col-6-medium col-12-small ">
+					<article class="box style2 portfolio-card">
+						<a href="https://github.com/prgrmcode/tr-earthquake-predictor/blob/main/README.md"
+							class="image featured" target="_blank"><img src="images/scatter_plot_Predicted_MAG.png"
+								alt="Earthquake Prediction AI" /></a>
+						<h3><a href="https://github.com/prgrmcode/tr-earthquake-predictor/blob/main/README.md"
+								target="_blank">Earthquake
+								Prediction AI</a></h3>
+						<p>Used machine learning to predict earthquake magnitudes with an MAE of 0.39.</p>
+						<p><strong> Goal:</strong> The primary objective of this AI project is to achieve a predictive
+							performance that demonstrates a Mean Absolute Error (MAE) of at most 0.45,
+							indicating accurate and robust earthquake magnitude prediction.
+							By achieving this performance benchmarks, the project aims to develop
+							a machine learning model that can effectively predict earthquake magnitudes,
+							contributing to our understanding of seismic events and supporting earthquake
+							preparedness efforts.</p>
+						<p><strong>Data preprocessing: </strong>Data cleaning, Pre-processing,
+							Feature engineering and Splitting the Data</p>
+						<p><strong>Methods: </strong>Random Forest Regression, Gradient Boosting Regression , Support
+							Vector Regression (SVR) (regression version of Support Vector
+							Machine (SVM)), Neural Networks using TensorFlow/Keras, XGBoost Regression</p>
+						<p><strong>Hyperparameter Tuning:
+							</strong>Random Search, Bayesian Optimization</p>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small ">
+					<article class="box style2 portfolio-card">
+						<a href="https://github.com/prgrmcode/AI-image-classification-Good-Bad/blob/main/README.md"
+							class="image featured" target="_blank"><img src="images/classification.png"
+								alt="Good and Bad classification" /></a>
+						<h3><a href="https://github.com/prgrmcode/AI-image-classification-Good-Bad/blob/main/README.md"
+								target="_blank">AI
+								Image Classification</a></h3>
+						<p>Classified images with CNNs and Transfer Learning, achieving 99.3% accuracy.</p>
+						<p><strong> Problem we are trying to solve:</strong> To build a Machine Learning model, that can
+							evaluate images
+							as good or bad so that company can use the model to classify the images taken by 4
+							cameras. This is a project to classify images from QA dataset from the AI4IM
+							project.
+						</p>
+
+						<figure>
+							<figcaption><strong>Using AI principles:</strong></figcaption>
+							<ul class="left-aligned-list">
+								<li>Feature engineering</li>
+								<li>Hyperparameter tuning</li>
+								<li>Detect & avoid overfitting</li>
+								<li>Method selection</li>
+								<li>Appropriate performance criteria</li>
+								<li>Test the result on independent test set</li>
+							</ul>
+						</figure>
+
+
+						<!-- <p> - Feature engineering
+							- Hyperparameter tuning
+							- Detect & avoid overfitting
+							- Method selection
+							- Appropriate performance criteria
+							- Test the result on independent test set
+						</p> -->
+						<p><strong>Challenge => </strong> To build a single class classifier that has trained on
+							enough
+							good images so
+							that it can detect bad images by only looking at them as seeing they are not good
+							images, so
+							that
+							classify them as not good=bad images</p>
+
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small ">
+					<article class="box style2 portfolio-card">
+						<a href="https://github.com/prgrmcode/TransferLearningwithDocker/tree/main"
+							class="image featured" target="_blank"><img src="images/flaskapi.png"
+								alt="Classification of animals using Flask app" /></a>
+						<h3><a href="https://github.com/prgrmcode/TransferLearningwithDocker/tree/main"
+								target="_blank">Transfer
+								Learning with Docker containerazation and deploying in an
+								application</a></h3>
+						<p>This is a AI classification project using PyTorch and 2 classes. Used trained model in a
+							Flask application and showed the AI classification prediction results on web page. Also
+							using two Docker containers with base images from Nvidia's nvidia/cuda from Docker hub.
+						</p>
+						<p>This project demonstrates transfer learning using ResNet18 for image classification. The
+							model was trained on a dataset of hymenoptera images and deployed using a Flask application.
+						</p>
+
+						<p><strong>Technologies:</strong> PyTorch, ResNet18, Flask, Docker</p>
+
+						<figure>
+							<figcaption><strong>Key Features:</strong></figcaption>
+							<ul class="left-aligned-list">
+								<li>Data preprocessing with normalization</li>
+								<li>Training with data augmentation</li>
+								<li>Model fine-tuning and evaluation</li>
+								<li>Deployment in a Flask web application</li>
+							</ul>
+						</figure>
+
+					</article>
+				</div>
+			</div>
+
+			<footer>
+				<p>Interested in my experience? Take a look below!</p>
+				<a href="#experience" class="button medium scrolly">See some of my recent experience</a>
+			</footer>
+
 		</div>
 	</article>
 
