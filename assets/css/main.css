@@ -426,6 +426,55 @@ footer > p {
   font-size: 0.95rem;
 }
 
+.experience-card .projects {
+  margin-top: 20px;
+}
+
+.experience-card .projects h4 {
+  color: #2a72b5;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.experience-card .projects ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.experience-card .projects ul li {
+  margin-bottom: 10px;
+}
+
+.experience-card .projects ul li ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.experience-card .projects ul li ul li {
+  margin-bottom: 5px;
+}
+
+.experience-card a:hover {
+  color: #0056b3;
+}
+
+.view-projects-btn,
+.up-btn {
+  background-color: #5ba06a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.view-projects-btn:hover,
+.up-btn:hover {
+  background-color: #060d14;
+}
+
 /* Education Section */
 /* .education-grid {
   display: flex;
@@ -2430,6 +2479,10 @@ ul.social li a.fa-google-plus {
 
 ul.social li a.fa-github {
   background-color: #fafafa;
+}
+
+ul.social li a.fa-medium {
+  background-color: #4f8d88;
 }
 
 ul.social li a.fa-rss {
