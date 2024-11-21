@@ -61,10 +61,10 @@
 	const mlModal = document.querySelector('#ml-specialist-modal');  // The modal itself
 	const closeModal = mlModal.querySelector('.close');  // The close button inside the modal
 
-	// Open the ML modal when the ML card is clicked
-    mlCard.onclick = function() {
-        mlModal.style.display = 'block';
-    }
+	// // Open the ML modal when the ML card is clicked
+    // mlCard.onclick = function() {
+    //     mlModal.style.display = 'block';
+    // }
 	
 	// Open the ML modal when the link is clicked
 	openModal.addEventListener('click', function() {
@@ -211,6 +211,7 @@
 	// 	});
 	// });
 
+	// Mobile navigation for nav bar
 	document.addEventListener('DOMContentLoaded', function() {
 		const menuIcon = document.getElementById('menu-icon');
 		const menu = document.getElementById('menu');
@@ -226,6 +227,29 @@
 					menu.classList.remove('show');
 				}
 			});
+		});
+	});
+
+	// View Projects button
+	// Scroll to top button
+	document.addEventListener('DOMContentLoaded', function() {
+		const viewProjectsBtn = document.querySelector('.view-projects-btn');
+		const projectsDiv = document.querySelector('.projects');
+		const upBtn = document.querySelector('.up-btn');
+		const mlCard = document.getElementById('ml-card');
+	
+		viewProjectsBtn.addEventListener('click', function() {
+			if (projectsDiv.style.display === 'none' || projectsDiv.style.display === '') {
+				projectsDiv.style.display = 'block';
+				viewProjectsBtn.textContent = 'Hide Projects';
+			} else {
+				projectsDiv.style.display = 'none';
+				viewProjectsBtn.textContent = 'View Projects';
+			}
+		});
+	
+		upBtn.addEventListener('click', function() {
+			mlCard.scrollIntoView({ behavior: 'smooth' });
 		});
 	});
 	
