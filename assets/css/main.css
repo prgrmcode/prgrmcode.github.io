@@ -338,10 +338,6 @@ header > p {
   margin: 0;
 }
 
-footer {
-  margin: 3em 0 0 0;
-}
-
 footer > p {
   font-size: 1.25em;
 }
@@ -3107,7 +3103,7 @@ body > article {
     margin: 0;
   }
 
-  /* Copyright */
+  /* Footer Copyright */
 
   #copyright {
     font-size: 1em;
