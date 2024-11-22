@@ -1,0 +1,32 @@
+/* Footer Section */
+.footer-end {
+  background-color: #282828; /* Dark background color */
+  color: #fff; /* Light text color */
+  padding: 20px 0; /* Padding for space inside the footer */
+  text-align: center; /* Center-align text */
+  border-top: 1px solid #27507c; /* Border at the top for separation */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for visual separation */
+  position: relative; /* Ensure the footer stays at the bottom */
+  width: 100%; /* Full width */
+}
+
+.footer-end ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.footer-end li {
+  display: inline; /* Display list items inline */
+  margin: 0 10px; /* Margin between list items */
+}
+
+.footer-end a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.footer-end a:hover {
+  color: #0056b3; /* Link color on hover */
+}
