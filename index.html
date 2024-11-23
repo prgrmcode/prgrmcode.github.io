@@ -306,14 +306,14 @@
 									</ul>
 								</li>
 
-								<li>Earthquake Prediction with AI | AI/ML Researcher, Jan 2023 – Jun 2023
+								<li>Earthquake Prediction with AI | AI/ML Researcher, Feb 2023 – Aug 2023
 									<ul>
 										<li><a href="https://github.com/prgrmcode/tr-earthquake-predictor/blob/main/README.md"
 												target="_blank">View Project</a></li>
 									</ul>
 								</li>
-								<li>AI Image Classification for Quality Control | Computer Vision Engineer, Sep 2022 –
-									Dec 2022
+								<li>AI Image Classification for Quality Control | Computer Vision Engineer, Sep 2023 –
+									Feb 2024
 									<ul>
 										<li><a href="https://github.com/prgrmcode/AI-image-classification-Good-Bad/blob/main/README.md"
 												target="_blank">View Project</a></li>
@@ -506,6 +506,8 @@
 				<h2>Projects</h2>
 				<p>A showcase of my recent work in AI and Machine Learning.</p>
 			</header>
+
+			<!-- Earthquake Prediction with AI -->
 			<div class="row portfolio-card-container">
 				<div class="col-4 col-6-medium col-12-small ">
 					<article class="box style2 portfolio-card">
@@ -513,102 +515,80 @@
 							class="image featured" target="_blank"><img src="images/scatter_plot_Predicted_MAG.png"
 								alt="Earthquake Prediction AI" /></a>
 						<h3><a href="https://github.com/prgrmcode/tr-earthquake-predictor/blob/main/README.md"
-								target="_blank">Earthquake
-								Prediction AI</a></h3>
-						<p>Used machine learning to predict earthquake magnitudes with an MAE of 0.39.</p>
-						<p><strong> Goal:</strong> The primary objective of this AI project is to achieve a predictive
-							performance that demonstrates a Mean Absolute Error (MAE) of at most 0.45,
-							indicating accurate and robust earthquake magnitude prediction.
-							By achieving this performance benchmarks, the project aims to develop
-							a machine learning model that can effectively predict earthquake magnitudes,
-							contributing to our understanding of seismic events and supporting earthquake
-							preparedness efforts.</p>
-						<p><strong>Data preprocessing: </strong>Data cleaning, Pre-processing,
-							Feature engineering and Splitting the Data</p>
-						<p><strong>Methods: </strong>Random Forest Regression, Gradient Boosting Regression , Support
-							Vector Regression (SVR) (regression version of Support Vector
-							Machine (SVM)), Neural Networks using TensorFlow/Keras, XGBoost Regression</p>
-						<p><strong>Hyperparameter Tuning:
-							</strong>Random Search, Bayesian Optimization</p>
+								target="_blank">Earthquake Prediction with AI</a></h3>
+						<p>This project aims to predict earthquake magnitudes and locations by analyzing seismic data to
+							identify patterns and trends. The goal is to provide valuable insights for earthquake
+							preparedness and mitigation.</p>
+
+						<button class="read-more-btn" data-modal="modal-earthquake">Read More</button>
 					</article>
 				</div>
+
+				<!-- AI Image Classification for Quality Control -->
 				<div class="col-4 col-6-medium col-12-small ">
 					<article class="box style2 portfolio-card">
 						<a href="https://github.com/prgrmcode/AI-image-classification-Good-Bad/blob/main/README.md"
 							class="image featured" target="_blank"><img src="images/classification.png"
 								alt="Good and Bad classification" /></a>
 						<h3><a href="https://github.com/prgrmcode/AI-image-classification-Good-Bad/blob/main/README.md"
-								target="_blank">AI
-								Image Classification</a></h3>
-						<p>Classified images with CNNs and Transfer Learning, achieving 99.3% accuracy.</p>
-						<p><strong> Problem we are trying to solve:</strong> To build a Machine Learning model, that can
-							evaluate images
-							as good or bad so that company can use the model to classify the images taken by 4
-							cameras. This is a project to classify images from QA dataset from the AI4IM
-							project.
-						</p>
+								target="_blank">AI Image Classification for Quality Control</a></h3>
+						<p>This project aims to classify images of an industrial product from a QA dataset provided by
+							the AI4IM project. The
+							dataset consists of QA images of injection-moulded products taken by four different cameras
+							from four different directions. </p>
 
-						<figure>
-							<figcaption><strong>Using AI principles:</strong></figcaption>
-							<ul class="left-aligned-list">
-								<li>Feature engineering</li>
-								<li>Hyperparameter tuning</li>
-								<li>Detect & avoid overfitting</li>
-								<li>Method selection</li>
-								<li>Appropriate performance criteria</li>
-								<li>Test the result on independent test set</li>
-							</ul>
-						</figure>
-
-
-						<!-- <p> - Feature engineering
-							- Hyperparameter tuning
-							- Detect & avoid overfitting
-							- Method selection
-							- Appropriate performance criteria
-							- Test the result on independent test set
-						</p> -->
-						<p><strong>Challenge => </strong> To build a single class classifier that has trained on
-							enough
-							good images so
-							that it can detect bad images by only looking at them as seeing they are not good
-							images, so
-							that
-							classify them as not good=bad images</p>
-
+						<button class="read-more-btn" data-modal="modal-quality-classification">Read More</button>
 					</article>
 				</div>
+
+				<!-- Transfer Learning for Scalable Deployment -->
 				<div class="col-4 col-6-medium col-12-small ">
 					<article class="box style2 portfolio-card">
 						<a href="https://github.com/prgrmcode/TransferLearningwithDocker/tree/main"
 							class="image featured" target="_blank"><img src="images/flaskapi.png"
 								alt="Classification of animals using Flask app" /></a>
 						<h3><a href="https://github.com/prgrmcode/TransferLearningwithDocker/tree/main"
-								target="_blank">Transfer
-								Learning with Docker containerazation and deploying in an
-								application</a></h3>
+								target="_blank">Transfer Learning for Scalable Deployment </a></h3>
 						<p>This is a AI classification project using PyTorch and 2 classes. Used trained model in a
 							Flask application and showed the AI classification prediction results on web page. Also
 							using two Docker containers with base images from Nvidia's nvidia/cuda from Docker hub.
 						</p>
-						<p>This project demonstrates transfer learning using ResNet18 for image classification. The
-							model was trained on a dataset of hymenoptera images and deployed using a Flask application.
-						</p>
-
-						<p><strong>Technologies:</strong> PyTorch, ResNet18, Flask, Docker</p>
-
-						<figure>
-							<figcaption><strong>Key Features:</strong></figcaption>
-							<ul class="left-aligned-list">
-								<li>Data preprocessing with normalization</li>
-								<li>Training with data augmentation</li>
-								<li>Model fine-tuning and evaluation</li>
-								<li>Deployment in a Flask web application</li>
-							</ul>
-						</figure>
-
+						<button class="read-more-btn" data-modal="modal-transfer">Read More</button>
 					</article>
 				</div>
+
+				<!-- Efficient Retrieval-Based QA System with LangChain and Hugging Face -->
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2 portfolio-card">
+						<a href="https://github.com/prgrmcode/retrieval-based-qa-llm" class="image featured"
+							target="_blank"><img src="images/langchain-RAG.jpg"
+								alt="LangChain Retrieval Augmented Generation" /></a>
+						<h3><a href="https://github.com/prgrmcode/retrieval-based-qa-llm" target="_blank">Efficient
+								Retrieval-Based QA System with LangChain and Hugging Face</a></h3>
+						<p>This project demonstrates the development of a powerful retrieval-based question-answering
+							system using LangChain and Hugging Face. The system leverages state-of-the-art language
+							models to provide accurate and contextually relevant answers to user queries.</p>
+						<button class="read-more-btn" data-modal="modal-qa">Read More</button>
+					</article>
+				</div>
+
+				<!-- Automated Image Captioning with AI -->
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2 portfolio-card">
+						<a href="https://github.com/prgrmcode/caption_photos_with_GenAI" class="image featured"
+							target="_blank"><img src="images/advanced_image_captioner_final.gif"
+								alt="Caption Photos with GenAI" /></a>
+						<h3><a href="https://github.com/prgrmcode/caption_photos_with_GenAI" target="_blank">Automated
+								Image Captioning with AI</a></h3>
+						<p>The Automated Image Captioning with AI project is designed to automatically generate
+							descriptive captions for images extracted from a given website URL or a local folder.
+							Leveraging state-of-the-art machine learning models, this project provides an interactive
+							web interface using Gradio, making it easy for users to input a URL or select images from a
+							folder, generate captions, and save the results.</p>
+						<button class="read-more-btn" data-modal="modal-captioning">Read More</button>
+					</article>
+				</div>
+
 			</div>
 
 			<footer>
@@ -616,9 +596,235 @@
 				<a href="#education" class="button medium scrolly">See my educational background</a>
 			</footer>
 
-
 		</div>
 	</article>
+
+	<!-- Modal Structure for RAG QA System -->
+	<div id="modal-qa" class="modal">
+		<div class="modal-content">
+			<span class="close-btn">&times;</span>
+			<h3><a href="https://github.com/prgrmcode/retrieval-based-qa-llm" target="_blank">Efficient Retrieval-Based
+					QA System with LangChain and Hugging Face</a></h3>
+
+			<p>In this project, I share the results and implementations of building a powerful
+				retrieval-based question-answering system using LangChain and Hugging Face. I walk you
+				through the process step-by-step, leveraging the capabilities of state-of-the-art language
+				models. For this project, I used markdown files from the Weights & Biases documentation as
+				the data source.</p>
+			<figure>
+				<a href="https://github.com/prgrmcode/retrieval-based-qa-llm" class="image featured"
+					target="_blank"><img src="images/langchain-RAG.jpg" alt="LangChain Retrieval Augmented Generation"
+						style="width:100%; height:auto;" /></a>
+
+				<figure>
+					<figcaption><strong>Key Features:</strong></figcaption>
+					<ul class="left-aligned-list">
+						<li>Loading and Preparing Data</li>
+						<li>Splitting Documents into Sections</li>
+						<li>Generating Embeddings</li>
+						<li>Storing Embeddings in Chroma</li>
+						<li>Alternative Solution: Prompt-Based Approach</li>
+						<li>Creating a RetrievalQA Chain</li>
+						<li>Running the Query</li>
+					</ul>
+				</figure>
+			</figure>
+			<p><strong>Technologies:</strong> LangChain, Hugging Face, Python</p>
+			<p><strong>Practical Applications:</strong> Enhanced information retrieval, improved user
+				experience, and efficient knowledge management.</p>
+		</div>
+	</div>
+
+	<!-- Modal Structure for Image Captioning -->
+	<div id="modal-captioning" class="modal">
+		<div class="modal-content">
+			<span class="close-btn">&times;</span>
+			<h3><a href="https://github.com/prgrmcode/caption_photos_with_GenAI" target="_blank">Automated
+					Image Captioning with AI</a></h3>
+			<p>The Automated Image Captioning with AI project is designed to automatically generate
+				descriptive captions for images extracted from a given website URL or a local folder.
+				Leveraging state-of-the-art machine learning models, this project provides an interactive
+				web interface using Gradio, making it easy for users to input a URL or select images from a
+				folder, generate captions, and save the results in any format to enable modifying later as
+				well.</p>
+			<a href="https://github.com/prgrmcode/caption_photos_with_GenAI" class="image featured" target="_blank"><img
+					src="images/URL-caption-editing.PNG" alt="Caption Photos with GenAI" /></a>
+
+			<p><strong>Development Process:</strong></p>
+			<ul class="left-aligned-list">
+				<li><strong>Situation:</strong> A news agency publishes hundreds of articles daily, each
+					containing several images relevant to the story. Writing appropriate and descriptive
+					captions for each image manually is a tedious task and might slow down the publication
+					process. The agency needed a solution to expedite this process while ensuring the
+					captions were accurate and contextually relevant.</li>
+				<li><strong>Task:</strong> Develop an automated image captioning tool that could generate
+					descriptive captions for images extracted from a given website URL or a folder. The tool
+					needed to be user-friendly, efficient, and capable of producing high-quality captions
+					that enhance accessibility and improve SEO.</li>
+				<li><strong>Action:</strong> Implemented an automated image captioning program that works
+					directly from a URL or a folder. The user provides the URL or selects images from a
+					folder, and the code generates captions for the images found. The output is a text file
+					that includes all the image URLs or image file names along with their respective
+					captions.</li>
+				<li><strong>Result:</strong> By integrating this automated image captioning tool, the news
+					agency is able to expedite its publication process significantly. The tool ensures that
+					all images come with appropriate descriptions, enhancing accessibility for visually
+					impaired readers and improving the website's SEO. This broadens the agency's reach and
+					engagement with a more diverse audience base.</li>
+			</ul>
+
+			<figure>
+				<figcaption><strong>Key Features:</strong></figcaption>
+				<ul class="left-aligned-list">
+					<li><b>Image Extraction:</b> Automatically extracts image URLs from the
+						provided website URL.
+					</li>
+					<li><b>Caption Generation:</b> Utilizes the Salesforce/blip-image-captioning-large model
+						to generate descriptive captions for each image.</li>
+					<li><b>Interactive Interface:</b> Provides a user-friendly interface using Gradio for
+						easy interaction.</li>
+					<li><b>Modify Captions:</b> Allows users to edit the generated captions.</li>
+					<li><b>Save Captions:</b> Allows users to save the generated captions to a text file.
+					</li>
+					<li><b>Clear Interface:</b> Includes a "Clear" button to reset the interface and clear
+						all data.</li>
+				</ul>
+			</figure>
+			<p><strong>Technologies:</strong> Gradio, Hugging Face, Python</p>
+			<p><strong>Practical Applications:</strong></p>
+			<ul class="left-aligned-list">
+				<li>Enhanced Accessibility: Helps visually impaired individuals understand visual content through
+					descriptive captions.</li>
+				<li>Improved SEO: Assists search engines in identifying the content of images, improving the article's
+					SEO.</li>
+				<li>Content Discovery: Enables efficient analysis and categorization of large image databases.</li>
+				<li>Social Media and Advertising: Automates engaging description generation for visual content.</li>
+				<li>Education and Research: Assists in understanding and interpreting visual materials.</li>
+				<li>Data Organization: Helps manage and categorize large sets of visual data.</li>
+				<li>Time-Saving: Automated captioning is more efficient than manual efforts.</li>
+				<li>User Engagement: Detailed captions can make visual content more engaging and informative.</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Modal Structure for Transfer Learning with Docker -->
+	<div id="modal-transfer" class="modal">
+		<div class="modal-content">
+			<span class="close-btn">&times;</span>
+			<h3><a href="https://github.com/prgrmcode/TransferLearningwithDocker/tree/main" target="_blank">Transfer
+					Learning for Scalable Deployment </a></h3>
+			<p>This project demonstrates transfer learning using ResNet18 for image classification. The
+				model was trained on a dataset of hymenoptera images and deployed using a Flask application.
+			</p>
+			<a href="https://github.com/prgrmcode/TransferLearningwithDocker/tree/main" class="image featured"
+				target="_blank"><img src="images/flaskapi.png" alt="Classification of animals using Flask app" /></a>
+			<p><strong>Technologies:</strong> Python, PyTorch, ResNet18, Flask, Docker</p>
+
+			<figure>
+				<figcaption><strong>Development Process:</strong></figcaption>
+				<ul class="left-aligned-list">
+					<li>Data preprocessing with normalization</li>
+					<li>Training with data augmentation</li>
+					<li>Model fine-tuning and evaluation</li>
+					<li>Deployment in a Flask web application, leveraging Docker containerization</li>
+				</ul>
+			</figure>
+			<p><strong>Practical Applications:</strong> This project showcases the use of transfer learning
+				to create a scalable image classification model. By leveraging a pre-trained ResNet18 model
+				and fine-tuning it on a custom dataset, the project demonstrates how to achieve high
+				accuracy in image classification tasks. The deployment of the model in a Flask application
+				provides a user-friendly interface for image classification, making it accessible to a wide
+				range of users.</p>
+
+		</div>
+	</div>
+
+	<!-- Modal Structure for AI Image Classification -->
+	<div id="modal-quality-classification" class="modal">
+		<div class="modal-content">
+			<span class="close-btn">&times;</span>
+			<h3><a href="https://github.com/prgrmcode/AI-image-classification-Good-Bad/blob/main/README.md"
+					target="_blank">AI Image Classification for Quality Control</a></h3>
+
+			<p><strong> Problem we are trying to solve:</strong> To build a Machine Learning model, that can
+				evaluate images
+				as good or bad, enabling the company to use the model for quality control
+				purposes. This is a project to classify images from QA dataset from the AI4IM
+				project.
+			</p>
+
+			<a href="https://github.com/prgrmcode/AI-image-classification-Good-Bad/blob/main/README.md"
+				class="image featured" target="_blank"><img src="images/classification_good-bad.png"
+					alt="Good and Bad classification performance graph" /></a>
+			<figure>
+				<figcaption><strong>Using AI principles:</strong></figcaption>
+				<ul class="left-aligned-list">
+					<li>Feature engineering</li>
+					<li>Hyperparameter tuning</li>
+					<li>Detect & avoid overfitting</li>
+					<li>Method selection</li>
+					<li>Appropriate performance criteria</li>
+					<li>Test the result on independent test set</li>
+				</ul>
+			</figure>
+			<p><strong>Challenge => </strong> To build a single class classifier that has trained on
+				enough good images so that it can detect bad images by only looking at them as seeing they are not good
+				images, so that classify them as 'not good'='bad' images</p>
+			<p><strong>Technologies:</strong> CNNs, Transfer Learning, Python</p>
+			<p><strong>Practical Applications:</strong> Enhanced quality control, improved product consistency, and
+				efficient defect detection.</p>
+		</div>
+	</div>
+
+	<!-- Modal Structure for Earthquake Prediction -->
+	<div id="modal-earthquake" class="modal">
+		<div class="modal-content">
+			<span class="close-btn">&times;</span>
+			<h3><a href="https://github.com/prgrmcode/tr-earthquake-predictor/blob/main/README.md"
+					target="_blank">Earthquake Prediction with AI</a></h3>
+			<p>Used machine learning to predict earthquake magnitudes with an MAE of 0.39.</p>
+			<img src="images/earthquake-histogram_prediction_errors.png" alt="Earthquake Prediction AI"
+				style="width:100%; height:auto;">
+			<figure>
+				<figcaption><strong>Key Features:</strong></figcaption>
+				<ul class="left-aligned-list">
+					<li>Predict earthquake magnitudes and locations</li>
+					<li>Analyze seismic data to identify patterns and trends</li>
+					<li>Provide valuable insights for earthquake preparedness and mitigation</li>
+				</ul>
+			</figure>
+			<p><strong>Technologies:</strong> Machine Learning, Python, Jupyter Notebook</p>
+			<p><strong>Practical Applications:</strong> Enhanced earthquake prediction, improved disaster preparedness,
+				and efficient risk mitigation.</p>
+			<p><strong>Methods:</strong> Random Forest Regression, Gradient Boosting Regression, Support Vector
+				Regression (SVR) (regression version of Support Vector Machine (SVM)), Neural Networks using
+				TensorFlow/Keras, XGBoost Regression</p>
+
+
+			<figure>
+				<figcaption><strong>Using AI principles:</strong></figcaption>
+				<ul class="left-aligned-list">
+					<li><strong>Data preprocessing: </strong>Data cleaning, Pre-processing,
+						Feature engineering and Splitting the Data</li>
+					<li>Model Training: Trained the machine learning models using the preprocessed data. </li>
+					<li><strong>Hyperparameter Tuning:</strong> Random Search, Bayesian Optimization</li>
+					<li><strong>Inference/Predictions:</strong> Used the trained models to make earthquake predictions.
+					</li>
+					<li>Data Visualization: Visualized earthquake patterns, trends, and predictions using the provided
+						visualization tools.</li>
+				</ul>
+			</figure>
+			<p><strong>Data:</strong> The project uses earthquake data from Turkey, including features like date,
+				location, latitude, longitude, magnitude, depth, and more. The dataset is available in the data
+				directory and in dataset location: <a
+					href="https://www.kaggle.com/datasets/serhatk/turkey-20-years-earthquakes-csv"
+					target="_blank">Turkey 20 Years Earthquakes CSV</a>. Please unzip the dataset and place it in the
+				root directory.</p>
+
+		</div>
+	</div>
+
+
 
 	<!-- Education Section -->
 	<article id="education" class="wrapper style3">
@@ -1025,6 +1231,7 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/form.js"></script>
+	<script src="assets/js/portfolio.js"></script>
 
 	<!-- Simple analytics code -->
 	<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
