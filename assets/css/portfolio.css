@@ -12,6 +12,18 @@
   height: 100%;
 }
 
+.portfolio-card h3 {
+  color: #2a72b5;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.portfolio-card p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
 .portfolio-card .box {
   display: flex;
   flex-direction: column;
@@ -44,6 +56,71 @@ figcaption {
   margin: 0.5em;
 }
 
+/* Ensure images inside portfolio cards are of equal size */
+.portfolio-card .image.featured img {
+  margin-top: 1em;
+  width: 100%;
+  height: 220px; /* Adjust height as needed */
+  object-fit: fill; /* Ensure the image fills the area without distortion */
+  border-radius: 8px; /* Optional: Add border radius for rounded corners */
+}
+
+/* Read More Button */
+.read-more-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 7% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Adjust width as needed */
+  max-width: 600px; /* Maximum width */
+  text-align: left; /* Align text to the left */
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Responsive adjustments */
 @media screen and (max-width: 980px) {
   .portfolio-card-container {
@@ -52,8 +129,13 @@ figcaption {
   }
 
   .portfolio-card {
-    width: 100%;
-    max-width: 700px;
+    width: 80%;
+    max-width: 600px;
+  }
+
+  .modal-content {
+    width: 75%;
+    margin: 10% auto; /* Centered */
   }
 }
 
@@ -61,5 +143,10 @@ figcaption {
   .portfolio-card {
     width: 100%;
     max-width: 100%;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 10% auto; /* Centered */
   }
 }
