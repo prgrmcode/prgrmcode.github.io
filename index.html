@@ -279,7 +279,8 @@
 						<li>Developed AI solutions in medical imaging, awarded a patent for innovation.</li>
 						<li>Optimized CNN architectures, improving diagnostic accuracy by 71.43%.</li>
 						<li>Collaborated cross-functionally to convert business needs into AI solutions.</li>
-						<li><a href="#barco-modal" class="open-barco-modal">Learn more about the experience and
+						<li style="display: none;"><a href="#barco-modal" class="open-barco-modal">Learn more about the
+								experience and
 								project</a></li>
 					</ul>
 				</div>
@@ -352,64 +353,7 @@
 			</div>
 
 
-			<!-- Modal for Barco Experience Details -->
-			<div id="barco-modal" class="modal">
-				<div class="modal-content">
-					<span class="close">&times;</span>
-					<h2>Medical Image Processing with AI</h2>
-					<h3>Phase1: Scale Detection in Mammography</h3>
 
-
-					<h3>PROBLEM OVERVIEW</h3>
-					<p>We need to know the scale.</p>
-					<img src="images/mammography.png" alt="Mammography Image"
-						style="width: 100%; height: auto; margin: 20px 0;">
-					<img src="images/markers.png" alt="Markers Detection"
-						style="width: 100%; height: auto; margin: 20px 0;">
-					<p>The main markers: Ruler & Magnifying Glass.</p>
-
-
-					<h3>METHODOLOGY</h3>
-					<p>We do not have access to metadata; DICOM data is not available on viewer. Markers on medical
-						image need to be detected and we need to develop AI algorithms.</p>
-					<img src="images/methodology.png" alt="Methodology Diagram"
-						style="width: 100%; height: auto; margin: 20px 0;">
-
-
-					<h3>YOLO OBJECT DETECTION TRAINING</h3>
-					<p>• Trained on RTX 3090 GPU with 800 images</p>
-					<p>• YOLO: <a href="https://docs.ultralytics.com/yolov5/" target="_blank">YOLO Documentation</a></p>
-
-					<h3>GET THE BOUNDING BOX AND READ TEXT WITH OCR</h3>
-					<p>• EasyOCR: state of the art and open source Optical Character Recognition (OCR) library.</p>
-					<p>• EasyOCR is built on top of PyTorch and OpenCV, it is an AI model which is pre-trained on more
-						than 80 languages.</p>
-					<p>• OCR: <a href="https://github.com/JaidedAI/EasyOCR" target="_blank">EasyOCR GitHub</a></p>
-
-					<h3>RESULTS</h3>
-					<p>Through the integration of AI-powered image processing techniques, including deep learning and
-						neural networks, our research achieves enhanced scale detection from markers in mammography
-						images. This innovative approach promises to improve early breast cancer detection and patient
-						outcomes.</p>
-					<img src="images/results.png" alt="Results Overview"
-						style="width: 100%; height: auto; margin: 20px 0;">
-					<img src="images/OCR.png" alt="OCR Process" style="width: 100%; height: auto; margin: 20px 0;">
-
-					<h3>CONCLUSIONS</h3>
-					<h3>AI-based Marker Detection</h3>
-					<p>Through the integration of AI-powered image processing techniques, including deep learning and
-						neural networks, our research achieves enhanced scale detection from markers in mammography
-						images. This innovative approach promises to improve early breast cancer detection and patient
-						outcomes, marking a significant advancement in medical imaging technology.
-					</p>
-					<!-- <h3>Read the content with OCR:</h3>
-					<pre>
-						[[18, 12], [82, 12], [82, 38], [18, 38]], '63 Mm’, 35%
-						[[28, 62], [74, 62], [74, 86], [28, 86]], '2.7x’, 72%
-						[[18, 112], [82, 112], [82, 138], [18, 138]], '63 Mm’, 39%
-        			</pre> -->
-				</div>
-			</div>
 
 			<!-- Modal for Step-by-Step Explanations -->
 			<div id="ml-specialist-modal" class="modal">
@@ -509,8 +453,60 @@
 				<p>A showcase of my recent work in AI and Machine Learning.</p>
 			</header>
 
-			<!-- Earthquake Prediction with AI -->
+
 			<div class="row portfolio-card-container">
+
+
+				<!-- Efficient Retrieval-Based QA System with LangChain and Hugging Face -->
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2 portfolio-card">
+						<a href="https://github.com/prgrmcode/retrieval-based-qa-llm" class="image featured"
+							target="_blank"><img src="images/langchain-RAG.jpg"
+								alt="LangChain Retrieval Augmented Generation" /></a>
+						<h3><a href="https://github.com/prgrmcode/retrieval-based-qa-llm" target="_blank">Efficient
+								Retrieval-Based QA System with LangChain and Hugging Face</a></h3>
+						<p>This project demonstrates the development of a powerful retrieval-based question-answering
+							system using LangChain and Hugging Face. The system leverages state-of-the-art language
+							models to provide accurate and contextually relevant answers to user queries.</p>
+						<button class="read-more-btn" data-modal="modal-qa">Read More</button>
+					</article>
+				</div>
+
+				<!-- Automated Image Captioning with AI -->
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2 portfolio-card">
+						<a href="https://github.com/prgrmcode/caption_photos_with_GenAI" class="image featured"
+							target="_blank"><img src="images/advanced_image_captioner_final.gif"
+								alt="Caption Photos with GenAI" /></a>
+						<h3><a href="https://github.com/prgrmcode/caption_photos_with_GenAI" target="_blank">Automated
+								Image Captioning with AI</a></h3>
+						<p>The Automated Image Captioning with AI project is designed to automatically generate
+							descriptive captions for images extracted from a given website URL or a local folder.
+							Leveraging state-of-the-art machine learning models, this project provides an interactive
+							web interface using Gradio, making it easy for users to input a URL or select images from a
+							folder, generate captions, and save the results.</p>
+						<button class="read-more-btn" data-modal="modal-captioning">Read More</button>
+					</article>
+				</div>
+
+				<!-- AI Dungeon Game Card -->
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2 portfolio-card">
+						<a href="https://github.com/prgrmcode/ai-dungeon-game" class="image featured" target="_blank">
+							<img src="https://media.githubusercontent.com/media/prgrmcode/ai-dungeon-game/main/assets/AI_Dungeon_Game.gif"
+								alt="AI Dungeon Game gameplay" />
+						</a>
+						<h3><a href="https://github.com/prgrmcode/ai-dungeon-game" target="_blank">AI-Powered Dungeon
+								Adventure Game</a></h3>
+						<p>An advanced text-based adventure game powered by Large Language Models (LLMs) that
+							demonstrates the practical application of AI/ML in interactive entertainment. The game
+							features dynamic quest generation, intelligent NPC interactions, and content safety
+							validation.</p>
+						<button class="read-more-btn" data-modal="modal-dungeon">Read More</button>
+					</article>
+				</div>
+
+				<!-- Earthquake Prediction with AI -->
 				<div class="col-4 col-6-medium col-12-small ">
 					<article class="box style2 portfolio-card">
 						<a href="https://github.com/prgrmcode/tr-earthquake-predictor/blob/main/README.md"
@@ -556,38 +552,6 @@
 							using two Docker containers with base images from Nvidia's nvidia/cuda from Docker hub.
 						</p>
 						<button class="read-more-btn" data-modal="modal-transfer">Read More</button>
-					</article>
-				</div>
-
-				<!-- Efficient Retrieval-Based QA System with LangChain and Hugging Face -->
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2 portfolio-card">
-						<a href="https://github.com/prgrmcode/retrieval-based-qa-llm" class="image featured"
-							target="_blank"><img src="images/langchain-RAG.jpg"
-								alt="LangChain Retrieval Augmented Generation" /></a>
-						<h3><a href="https://github.com/prgrmcode/retrieval-based-qa-llm" target="_blank">Efficient
-								Retrieval-Based QA System with LangChain and Hugging Face</a></h3>
-						<p>This project demonstrates the development of a powerful retrieval-based question-answering
-							system using LangChain and Hugging Face. The system leverages state-of-the-art language
-							models to provide accurate and contextually relevant answers to user queries.</p>
-						<button class="read-more-btn" data-modal="modal-qa">Read More</button>
-					</article>
-				</div>
-
-				<!-- Automated Image Captioning with AI -->
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2 portfolio-card">
-						<a href="https://github.com/prgrmcode/caption_photos_with_GenAI" class="image featured"
-							target="_blank"><img src="images/advanced_image_captioner_final.gif"
-								alt="Caption Photos with GenAI" /></a>
-						<h3><a href="https://github.com/prgrmcode/caption_photos_with_GenAI" target="_blank">Automated
-								Image Captioning with AI</a></h3>
-						<p>The Automated Image Captioning with AI project is designed to automatically generate
-							descriptive captions for images extracted from a given website URL or a local folder.
-							Leveraging state-of-the-art machine learning models, this project provides an interactive
-							web interface using Gradio, making it easy for users to input a URL or select images from a
-							folder, generate captions, and save the results.</p>
-						<button class="read-more-btn" data-modal="modal-captioning">Read More</button>
 					</article>
 				</div>
 
@@ -706,6 +670,77 @@
 				<li>Time-Saving: Automated captioning is more efficient than manual efforts.</li>
 				<li>User Engagement: Detailed captions can make visual content more engaging and informative.</li>
 			</ul>
+		</div>
+	</div>
+
+
+	<!-- Modal Structure for AI Dungeon Game -->
+	<div id="modal-dungeon" class="modal">
+		<div class="modal-content">
+			<span class="close-btn">&times;</span>
+			<h3>AI-Powered Dungeon Adventure Game</h3>
+			<figure>
+				<img src="https://media.githubusercontent.com/media/prgrmcode/ai-dungeon-game/main/assets/AI_Dungeon_Game.gif"
+					alt="AI Dungeon Game" style="width:100%; height:auto;">
+				<figcaption><strong>Key Features:</strong></figcaption>
+				<ul class="left-aligned-list">
+					<li>Dynamic Quest System with procedurally generated quests</li>
+					<li>Intelligent Response Generation with context-aware narratives</li>
+					<li>Advanced Safety System using Prompt Guard and Llama Guard</li>
+					<li>Inventory Management with natural language parsing</li>
+				</ul>
+			</figure>
+			<p><strong>Technologies:</strong></p>
+			<ul class="left-aligned-list">
+				<li>Python 3.10+, PyTorch, Hugging Face Transformers</li>
+				<li>Gradio for web interface, CUDA for GPU acceleration</li>
+				<li>Docker for containerization</li>
+				<li>Prometheus for monitoring</li>
+			</ul>
+			<p><strong>AI/ML Implementation:</strong></p>
+			<ul class="left-aligned-list">
+				<li>Primary Model: LLaMA-3.2-3B-Instruct</li>
+				<li>Safety Model: LLaMA-Guard-3-1B</li>
+				<li>Natural Language Processing for context and response generation</li>
+				<li>Memory optimization with 8-bit quantization</li>
+			</ul>
+			<p><strong>Deployment:</strong></p>
+			<ul class="left-aligned-list">
+				<li>Local Docker deployment</li>
+				<li>Hugging Face Spaces integration</li>
+				<li>AWS deployment options</li>
+				<li>Kubernetes support</li>
+			</ul>
+
+			<p><strong>Deployment Details:</strong></p>
+			<ul class="left-aligned-list">
+				<li><strong>Local Development:</strong></li>
+				<ul>
+					<li>Build: <code>docker-compose --env-file .env up --build</code></li>
+					<li>Run: Access via <code>http://localhost:7860</code></li>
+				</ul>
+				<li><strong>Hugging Face Spaces:</strong></li>
+				<ul>
+					<li>Automated deployment through GitHub Actions</li>
+					<li>Continuous integration with main branch</li>
+					<li>Real-time model updates and monitoring</li>
+				</ul>
+				<li><strong>AWS Deployment:</strong></li>
+				<ul>
+					<li>ECR Push: <code>aws ecr get-login-password | docker login --username AWS</code></li>
+					<li>ECS/EKS deployment with auto-scaling</li>
+					<li>CloudWatch monitoring integration</li>
+				</ul>
+				<li><strong>Kubernetes:</strong></li>
+				<ul>
+					<li>Deployment: <code>kubectl apply -f kubernetes/</code></li>
+					<li>Resource management and scaling</li>
+					<li>Health monitoring and auto-recovery</li>
+				</ul>
+			</ul>
+
+			<p><strong>Demo:</strong> <a href="https://huggingface.co/spaces/Prgrmmer/ai-dungeon" target="_blank">Try it
+					on Hugging Face Spaces</a></p>
 		</div>
 	</div>
 
