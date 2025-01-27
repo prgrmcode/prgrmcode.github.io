@@ -615,13 +615,52 @@ footer > p {
 #experience {
   background: linear-gradient(
     to right,
-    #1a1a2e,
-    #16213e
+    #ccb0b0,
+    #29b473
   ); /* Gradient background */
   padding: 60px 20px; /* Spacing around the section */
-  color: #ffffff; /* White text for contrast */
+  color: #212529; /* Darker text for contrast */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+
+#experience {
+  background: linear-gradient(
+    120deg,
+    #ffffff,
+    #e6f3ff,
+    #d4f4e2
+  ); /* Softer, more professional gradient */
+  padding: 60px 20px;
+  color: #2c3e50; /* Slightly softer text color */
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Lighter, more subtle shadow */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add subtle animation effect */
+#experience::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(230, 243, 255, 0.1),
+    rgba(212, 244, 226, 0.1)
+  );
+  transform: translateX(-100%);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 #experience header {
@@ -633,12 +672,12 @@ footer > p {
   font-family: "Montserrat", sans-serif; /* Modern font for title */
   font-size: 2.5rem;
   margin-bottom: 10px; /* Space below title */
-  color: #00adb5; /* Bright accent color */
+  color: #2a72b5; /* Bright accent color */
 }
 
 #experience header p {
   font-size: 1.2rem;
-  color: #eeeeee; /* Light gray for subtext */
+  color: #495057; /* Light gray for subtext */
 }
 
 /* Grid layout for experience cards */
@@ -653,13 +692,21 @@ footer > p {
 
 /* Experience Card Styling */
 .experience-card {
-  background: #0f3460; /* Card background */
+  background: #17375c; /* Card background */
   border-radius: 15px; /* Rounded corners */
   padding: 30px;
   position: relative; /* For positioning the icon */
   overflow: hidden; /* Clip children */
   transition: transform 0.3s, box-shadow 0.3s; /* Animation on hover */
   text-align: center; /* Centered text */
+}
+
+.experience-card {
+  background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dee2e6;
 }
 
 .card-icon {
@@ -677,19 +724,31 @@ footer > p {
   margin-bottom: 10px; /* Space below title */
   color: #ffffff; /* White title color */
 }
+.experience-card h3 {
+  color: #2a72b5;
+}
 
 .experience-card p {
   font-size: 1rem;
   color: #dddddd; /* Light gray for company info */
   margin-bottom: 15px; /* Space below company info */
 }
+.experience-card p {
+  color: #495057;
+}
 .experience-card strong {
   color: #dddddd; /* Light gray for company info */
+}
+.experience-card strong {
+  color: #343a40;
 }
 
 .experience-card ul {
   list-style-type: none; /* No bullets */
   padding-left: 0; /* No padding */
+}
+.experience-card ul {
+  color: #6c757d;
 }
 
 .experience-card li {
@@ -711,8 +770,8 @@ footer > p {
 }
 
 #experience footer p {
-  font-size: 1rem;
-  color: #eeeeee; /* Light gray for footer text */
+  font-size: 1.3rem;
+  color: #000000;
 }
 
 #experience footer a {
@@ -729,6 +788,31 @@ footer > p {
 #experience footer a:hover {
   background-color: #009e9a; /* Darker shade on hover */
   transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Dark mode support if needed */
+@media (prefers-color-scheme: dark) {
+  .experience-card {
+    background: linear-gradient(145deg, #2d3436 0%, #1e2124 100%);
+    border-color: #495057;
+  }
+
+  .experience-card:hover {
+    background: linear-gradient(145deg, #343a40 0%, #2d3436 100%);
+  }
+
+  .experience-card h3 {
+    color: #7cb9e8;
+  }
+
+  .experience-card p,
+  .experience-card ul {
+    color: #ced4da;
+  }
+
+  .experience-card strong {
+    color: #e9ecef;
+  }
 }
 
 /* Modal Styles */
